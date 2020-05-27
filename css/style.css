@@ -1,0 +1,95 @@
+/* BOX MODEL - nastavíme intuitivnější box model (border-box) */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+Barvy
+tmavomodrá: #141437
+modrá tmavá: #1A1A49
+modrá: #373BB2
+žlutá: #FFD750
+šedomodrá: #48497B
+středně modrá: #1A4E96
+světle modrá: #36AADD
+modrozelená: #35B5B8
+růžová: #EA677C
+světle šedá: #f0f0f0
+
+GRADIENT - MODRA TMAVA SVETLA
+
+background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
+
+GRADIENT - MODRA SVETLA A FIALOVA
+
+background: rgb(103,105,206);
+background: linear-gradient(0deg, rgba(103,105,206,0.7049194677871149) 25%, rgba(41,140,211,1) 100%);
+
+*/
+
+/* TYPOGRAFIE */
+
+body {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.8rem;
+  text-align: left;
+  background-color: #48497b;
+}
+
+.sekce {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 2.8rem;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 2.4rem;
+  margin-bottom: 25px;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+button {
+  margin: 10px;
+  border-radius: 50%;
+}
+
+/* MENU */
+/* musíme stylovat s takovou specificitou, jako sám Bootstrap, jinak se naám nepodaří menu obarvit */
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: #c5308a;
+}
