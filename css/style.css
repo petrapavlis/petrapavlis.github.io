@@ -50,12 +50,12 @@ body {
   font-weight: normal;
   line-height: 1.8rem;
   text-align: left;
-  background-color: #48497b;
+  background-color: #2a3990ff;
 }
 
 .sekce {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-left: 20px;
   padding-right: 20px;
 }
