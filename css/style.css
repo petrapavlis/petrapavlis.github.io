@@ -45,19 +45,35 @@ background: linear-gradient(0deg, rgba(103,105,206,0.7049194677871149) 25%, rgba
 
 body {
   font-family: "Varela Round", sans-serif;
-  color: white;
+  color: black;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.8rem;
   text-align: left;
-  background-color: #2a3990ff;
+  background-color: white;
 }
 
 .sekce {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+
+.navbar,
+.sekce-uvod {
+  background-color: #2a3990ff;
+  color: white;
+}
+
+.obsah {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.obsah-uvod {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 h1 {
@@ -67,9 +83,15 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 2.4rem;
   margin-bottom: 25px;
+  color: #2a3990ff;
+}
+
+.sekce-uvod h2 {
+  font-size: 20px;
+  color: white;
 }
 
 p {
@@ -79,6 +101,8 @@ p {
 button {
   margin: 10px;
   border-radius: 50%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* MENU */
