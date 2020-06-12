@@ -1,4 +1,16 @@
-/* BOX MODEL - nastavíme intuitivnější box model (border-box) */
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+Barvy
+růžová: #c5308a
+světle šedá: #f0f0f0
+*/
+
 html {
   box-sizing: border-box;
 }
@@ -9,111 +21,175 @@ html {
   box-sizing: inherit;
 }
 
-/*
-Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
-xs: (max-width: 575px)
-sm: (min-width: 576px) and (max-width: 767px)
-md: (min-width: 768px) and (max-width: 991px)
-lg: (min-width: 992px) and (max-width: 1199px)
-xl: (min-width: 1200px)
-
-Barvy
-tmavomodrá: #141437
-modrá tmavá: #1A1A49
-modrá: #373BB2
-žlutá: #FFD750
-šedomodrá: #48497B
-středně modrá: #1A4E96
-světle modrá: #36AADD
-modrozelená: #35B5B8
-růžová: #EA677C
-světle šedá: #f0f0f0
-
-GRADIENT - MODRA TMAVA SVETLA
-
-background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
-
-GRADIENT - MODRA SVETLA A FIALOVA
-
-background: rgb(103,105,206);
-background: linear-gradient(0deg, rgba(103,105,206,0.7049194677871149) 25%, rgba(41,140,211,1) 100%);
-
-*/
-
-/* TYPOGRAFIE */
-
 body {
-  font-family: "Varela Round", sans-serif;
-  color: black;
+  display: block;
+  margin: auto;
+  color: #26292c;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: normal;
-  line-height: 1.8rem;
-  text-align: left;
-  background-color: white;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
 }
 
-.sekce {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.navbar,
-.sekce-uvod {
-  background-color: #2a3990ff;
-  color: white;
-}
-
-.obsah {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.obsah-uvod {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
+/* TITLES */
 h1 {
-  font-size: 32px;
-  line-height: 2.8rem;
-  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 24px;
-  line-height: 2.4rem;
-  margin-bottom: 25px;
-  color: #2a3990ff;
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
-.sekce-uvod h2 {
-  font-size: 20px;
-  color: white;
+h3 {
+  font-size: 48px;
+  color: #c5308a;
+  border-top: solid #c5308a 1px;
+  padding-top: 30px;
 }
 
-p {
-  margin-bottom: 25px;
-}
-
-button {
-  margin: 10px;
-  border-radius: 50%;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* MENU */
-/* musíme stylovat s takovou specificitou, jako sám Bootstrap, jinak se naám nepodaří menu obarvit */
+/* NAVIGATION */
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
   padding: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
+  color: #c5308a;
+}
+
+.nav-button {
+  border: solid black 2px;
+  padding: 10px;
+}
+
+.btn-outline-light {
+  color: white;
   background-color: #c5308a;
+  border-color: #c5308a;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 40px 10px 40px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  width: 200px;
+  transition: all 0.25s ease-in-out;
+  font-size: 20px;
+}
+
+/* SECTION */
+.section-header {
+  background-color: #4a148c;
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  color: white;
+}
+
+.section-header,
+.section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-header,
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-gray {
+  background-color: #f0f0f0;
+}
+
+.content-header {
+  padding-top: 100px;
+}
+
+#footer {
+  background-color: #4a148c;
+  color: white;
+  padding-top: 20px;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 1600px;
+    font-size: 18px;
+  }
+
+  /* TITLES */
+  h1 {
+    font-size: 48px;
+  }
+
+  .section-header p {
+    font-size: 32px;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  /* NAVIGATION */
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #c5308a;
+  }
+
+  .nav-button {
+    border: solid black 2px;
+    padding: 10px;
+  }
+
+  /* SECTION */
+  .section-header {
+    height: 800px;
+  }
+
+  .section-header,
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .content-header {
+    padding-top: 160px;
+  }
+
+  .section-gray {
+    background-color: #f0f0f0;
+  }
+
+  .btn-outline-light {
+    margin-bottom: 0px;
+  }
 }
