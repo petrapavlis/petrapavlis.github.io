@@ -9,8 +9,6 @@
 <meta name="author" content="Petra Pavlisová, Lenka Erbenová">
 <title>Usínám · Znáš narkolepsii?</title>
 
-<!-- Google Font: Lora -->
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <!-- Google Font: Montserrat -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <!-- Google Font: Roboto -->
@@ -25,24 +23,23 @@
 
 <body>
 <!-- Main menu -->
-<nav class="navbar fixed-top navbar-expand-md navbar-dark py-0">
-	<div class="container">
-		<a class="navbar-brand" href="#">
-			<img src="images/spaci_logo_dark-transparent.png" width="80" height="80" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-		
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mojeNavigace" aria-controls="mojeNavigace" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		
-		<div class="collapse navbar-collapse" id="mojeNavigace">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="nav-link" href="#narkolepsie">Co je narkolepsie</a></li>
-				<li class="nav-item"><a class="nav-link" href="#centra">Najdi specialistu</a></li>
-				<li class="nav-item"><a class="nav-link" href="#test">Otestuj se</a></li>
-				<!--<li class="nav-item"><a class="nav-link" href="#kontakt">Zeptej se</a></li>-->
-			</ul>
-		</div>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top py-0">
+	<a class="navbar-brand" href="#index">
+		<img src="images/spaci_logo_dark-transparent.png" width="48" height="48" class="d-inline-block align-middle" alt="" loading="lazy"></a>
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mojeNavigace" aria-controls="mojeNavigace" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="mojeNavigace">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a class="nav-link" href="#co-je-narkolepsie">Co je narkolepsie</a></li>
+			<li class="nav-item"><a class="nav-link" href="#najdi-specialistu">Najdi specialistu</a></li>
+			<li class="nav-item"><a class="nav-link" href="#otestuj-se">Otestuj se</a></li>
+			<!--<li class="nav-item"><a class="nav-link" href="#zeptej-se">Zeptej se</a></li>-->
+		</ul>
 	</div>
+</div>
 </nav>
 
 <!-- Header -->
@@ -54,24 +51,22 @@
 				<p>Celodenní únava, usínání během dne, problém zůstat vzhůru. Možná ti to zní povědomě.</p>
 				<button type="button" class="header-btn btn btn-outline-light">Otestuj se</button>
 			</div>
-			<div class="img-header col-md-6 text-left">
-				<img src="images/narcolepsy-orange.png" class="img-fluid person" alt="Responsive image">
-			</div>
 		</div>
 	</div>
 </header>
 
-<!-- Main -->
-<section class="section about">
+<!-- Narkolepsie -->
+<section class="section narkolepsie">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="narkolepsie col-md-6 obsah text-left">
-				<h2>Co je narkolepsie</h2>
-				<p>Narkolepsie je spánková porucha, která se projevuje nadměrnou denní spavostí. Mezi další typické příznaky patří především kataplexie, spánková obrna, hypnagogické halucinace, automatické chování a nekvalitní noční spánek. Lidem s narkolepsií se chce spát často, ale do růžova se vyspí málokdy. <a class="content-link" href="#narkolepsie">Čti dál...</a>
-				</p>
+			<div class="col-md-6 text-left">
+				<img src="images/usinani-kavarna.png" class="img-fluid" alt="Responsive image">
 			</div>
-			<div class="col-md-6">
-				<img src="images/brain-chaos.png" class="img-fluid mozek" alt="Responsive image">
+			<div class="narkolepsie col-md-6 text-left order-md-first">
+				<h2>Co je narkolepsie</h2>
+				<p>Narkolepsie je spánková porucha, která se projevuje nadměrnou denní spavostí. Mezi další typické příznaky patří především kataplexie, spánková obrna, hypnagogické halucinace, automatické chování a nekvalitní noční spánek. Lidem s narkolepsií se chce spát často, ale do růžova se vyspí málokdy.</p>
+				<p><a class="content-link" href="#narkolepsie">Čti dál...</a>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -80,28 +75,48 @@
 <section class="section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-md-4 text-left">
-				<h3>1</h3>
+			<div class="col-md-6 text-left">
+				<img src="images/automaticke-chovani-psani.png" class="img-fluid" alt="Responsive image">
+			</div>
+			<div class="col-md-6 text-left">
 				<h2>Otestuj se</h2>
 				<p>Udělej si jednoduchý test, který zjišťuje přítomnost a míru typických příznaků pro narkolepsii. Test má dvě části, které ti dohromady zaberou cca 5 minut.
 				</p>
 				<p><a class="content-link" href="#test">Přejdi na test...</a>
 				</p>
 			</div>
-			<div class="col-md-4 text-left">
-				<h3>2</h3>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6 text-left">
+				<img src="images/paralyza.png" class="img-fluid" alt="Responsive image">
+			</div>
+			<div class="col-md-6 text-left order-md-first">
 				<h2>Najdi specialistu</h2>
 				<p>Projdi mapu odborných pracovišť a zjisti, kde jsou v ČR spánkové laboratoře, které se specializují právě na narkolepsii.
 				</p>
 				<p><a class="content-link" href="#centra">Najdi spánkové centrum...</a>
 			</div>
-			<div class="col-md-4 text-left">
-				<h3>3</h3>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6 text-left">
+				<img src="images/halucinace-po-probuzeni.png" class="img-fluid" alt="Responsive image">
+			</div>
+			<div class="col-md-6 text-left">
 				<h2>Zeptej se</h2>
 				<p>Máš otázky? Napiš přes messanger nebo se připoj k diskusní skupině narkoleptiků na facebooku.
 				</p>
-				<p><a class="content-link" href="#kontakt">Ikona Messenger</a>
-				<p><a class="content-link" href="#kontakt">Ikona Facebook</a>
+				<p><a class="content-link" href="#kontakt">Ikona Messenger</a></p>
+				<p><a class="content-link" href="#kontakt">Ikona Facebook</a></p>
 			</div>
 		</div>
 	</div>
@@ -110,12 +125,13 @@
 	<!-- footer -->
 	<div id="footer">
 		<div class="container">
-			<div class="row">
-
-				<div class="footer-author col-sm-8">
+			<div class="row justify-content-center">
+				<div class="footer-author">
 					<p>&copy;2020, Czechitas, Petra Pavlisová & Lenka Erbenová.</p>
 				</div>
-	</div><!-- END footer -->
+			</div>
+		</div>
+	</div>
 
 
 	<!-- Optional JavaScript -->
