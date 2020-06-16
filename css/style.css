@@ -26,54 +26,27 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  font-size: 16px;
+}
+
+/* ----- MOBILE FIRST ----- */
+
 body {
   display: block;
   margin: auto;
   max-width: 1600px;
   color: #26292c;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }
 
-/* TYPOGRAPHY */
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2em;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 2px #0c2357;
-}
+/* ----- MAIN MENU ----- */
 
-.section-header p {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5em;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 2px #0c2357;
-}
-
-h2 {
-  color: #0c2357;
-  font-size: 28px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-p a {
-  color: #f57c00;
-}
-
-p a:hover {
-  color: #ef6c00;
-}
-
-/* MAIN MENU */
 .navba-light .navbar-collapse {
   background-color: white;
 }
@@ -86,18 +59,32 @@ p a:hover {
 }
 
 .navbar-light .navbar-brand img {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #f57c00;
 }
 
-/* HEADER */
-/* SECTION */
-.section {
-  padding: 45px 15px 15px;
+/* ----- HEADER ----- */
+
+.section-header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 1.25rem;
+  text-shadow: 1px 1px 2px #0c2357;
+}
+
+.section-header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 1.25rem;
+  text-shadow: 1px 1px 2px #0c2357;
 }
 
 .section-header {
@@ -110,47 +97,113 @@ p a:hover {
   color: white;
 }
 
-.section-title {
-  background-color: #0c2357;
-  color: white;
-}
-
 .content-header {
   padding-top: 80px;
 }
 
-.content-title {
-  padding-top: 80px;
+/* ----- JUMBOTRON ----- */
+
+.jumbotron h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-bottom: 2rem;
 }
 
-.btn-outline-light {
+.jumbotron p {
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-image: url(../images/dark-blue-watercolor-jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  background-color: #0c2357;
+  color: white;
+}
+
+.jumbotron .lead {
+  color: white;
+}
+
+/* ----- SECTION ----- */
+
+.section {
+  padding: 2.75rem 1rem 1rem;
+}
+
+/* ----- TYPOGRAPHY ----- */
+
+h2 {
+  color: #0c2357;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+p a {
+  color: #f57c00;
+}
+
+p a:hover {
+  color: #ef6c00;
+}
+
+/* ----- BUTTON ----- */
+
+.btn-primary {
   cursor: pointer;
   color: white;
-  font-weight: 700;
-  text-transform: uppercase;
   background-color: #f57c00;
   border-color: #f57c00;
-  padding: 8px 34px 8px 34px;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  font-weight: 700;
+  padding: 0.5rem 1.75rem 0.5rem 1.75rem;
+  width: 180px;
+  margin-top: 0.5rem;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
     background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
     color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 20px;
-  box-shadow: 0 8px 6px -6px black;
 }
 
-.btn-outline-light:hover {
+.btn-primary:hover {
   color: white;
   background-color: #ef6c00;
   border-color: #ef6c00;
 }
 
-img {
-  margin-top: 20px;
+.btn-outline-secondary {
+  cursor: pointer;
+  color: #f57c00;
+  border-color: #f57c00;
+  font-weight: 500;
+  padding: 0.5rem 1.75rem 0.5rem 1.75rem;
+  width: 180px;
+  margin-top: 0.5rem;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* FOOTER */
+.btn-outline-secondary:hover {
+  color: #f57c00;
+  background-color: #fafafa;
+  border-color: #ef6c00;
+}
+
+/* ----- FOOTER ----- */
+
 #footer {
   background-image: url(../images/dark-blue-watercolor-bar.jpg);
   background-repeat: no-repeat;
@@ -158,42 +211,28 @@ img {
   background-position: bottom right;
   background-color: #0c2357;
   color: white;
-  padding-top: 15px;
-  margin-top: 45px;
-  font-size: 16px;
+  padding-top: 1rem;
+  margin-top: 2.75rem;
+  font-size: 1rem;
   text-align: center;
   text-shadow: 1px 1px 2px #0c2357;
 }
 
+/* ----- MEDIA - LARGE SCREEN ----- */
+
 @media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
+  /* ----- MAIN MENU ----- */
 
-  /* TYPOGRAPHY */
-  h1 {
-    font-size: 48px;
-  }
-
-  .section-header p {
-    font-size: 24px;
-  }
-
-  h2 {
-    margin-bottom: 40px;
-  }
-
-  /* MENU */
   .navbar-light .navbar-brand {
-    padding-left: 50px;
+    padding-left: 3rem;
   }
 
   .navbar-light .navbar-nav .nav-link {
-    padding-right: 50px;
+    padding-right: 3rem;
   }
 
-  /* HEADER */
-  /* SECTION */
+  /* ----- HEADER ----- */
+
   .section-header {
     height: 800px;
     background-image: url(../images/falling-asleep-no-background.png),
@@ -209,7 +248,43 @@ img {
     padding-top: 10%;
   }
 
+  /* ----- JUMBOTRON ----- */
+
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+
+  /* ----- TYPOGRAPHY ----- */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .section-header p {
+    font-size: 1.5rem;
+  }
+
   .content-title {
     padding-top: 10%;
+  }
+
+  /* ----- FOOTER ----- */
+
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  footer p {
+    margin-bottom: 0.25rem;
   }
 }

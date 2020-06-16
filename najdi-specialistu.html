@@ -1,295 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chce se mi spát</title>
-    <!-- Bootstrap css goes here-->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Webová stránka pro primární sebediagnostiku narkolepsie."
+    />
+    <meta name="author" content="Petra Pavlisová, Lenka Erbenová" />
+    <title>Usínám - Znáš narkolepsii?</title>
 
-    <!-- my CSS goes here -->
+    <!-- Google Font: Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font: Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap styly -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- naše CSS styly -->
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Google fonts go here -->
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-   
   </head>
 
   <body>
-	<!-- Hlavni menu -->
-	<nav class="navbar navbar-expand-md navbar-dark py-0">
-
-		<div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="images/spaci_logo_dark-transparent.png" width="80" height="80" class="d-inline-block align-middle" alt="" loading="lazy">
-        <!-- <img src="images/usinam logo transparentni.png" width="200" height="53" class="d-inline-block align-middle" alt="" loading="lazy"> MA BYT VIDET JENOM NA VETSIM SCREENU -->
-      </a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mojeNavigace" aria-controls="mojeNavigace"
-			 aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-      </button>
-      
-			<div class="collapse navbar-collapse" id="mojeNavigace">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link" href="#test">Otestuj se</a></li>
-					<li class="nav-item"><a class="nav-link" href="#centra">Najdi specialistu</a></li>
-					<li class="nav-item"><a class="nav-link" href="#narkolepsie">Co je narkolepsie</a></li>
-					<li class="nav-item"><a class="nav-link" href="#kontakt">Zeptej se</a></li>
-				</ul>
-			</div>
-		</div>
-  </nav>
+    <!-- Main menu -->
+    <nav class="navbar navbar-expand-md navbar-light py-0">
+      <a class="navbar-brand" href="#index">
+        <img
+          src="images/spaci_logo_light.png"
+          width="64"
+          height="64"
+          class="d-inline-block align-middle"
+          alt=""
+          loading="lazy"
+      /></a>
   
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#mojeNavigace"
+        aria-controls="mojeNavigace"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="mojeNavigace">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../projekt-narkolepsie/co-je-narkolepsie"
+              >Co je narkolepsie</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../projekt-narkolepsie/najdi-specialistu"
+              >Najdi specialistu</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../projekt-narkolepsie/otestuj-se">Otestuj se</a>
+          </li>
+          <!--<li class="nav-item"><a class="nav-link" href="#zeptej-se">Zeptej se</a></li>-->
+        </ul>
+      </div>
+    </nav>
 
-<!-- Sekce Najdi specialistu -->
-<section class="sekce">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-10 text-left">
-        <h1>Spánkové laboratoře</h1>
-        <h2>xxxxxxxxxxxxx</h2>
-        <p>V České republice je celkem 6 specializovaných pracovišť, které se zaměřují na narkolepsii, umí ji diagnostikovat a léčit.</p>
-        <p>Vyšetření na narkolepsii probíhá formou dvoudenní hospitalizace, kdy se monitoruje jednak noční spánek tzv. noční polysomnografie, a jednak denní spánek tzv. test mnohačetné latence usnutí. Vše doplňují ještě další menší vyšetření podle indikace lékaře a potřeby. </p>
-        <p>Pokud máte pocit, že byste mohli mít narkolepsii a vaše podezření potvrdil i náš test, vytiskněte si jeho výsledek a navštivte svého neurologa (případně praktického lékaře.) Předložte mu výsledný výpis a požádejte, aby vám napsal doporučení na vyšetření ve spánkové laboratoři. Tato specializovaná centra jsou totiž velmi vytížená a bez doporučení ošetřujícího lékaře se tam v podstatě nemáte šanci dostat. Zejména zdůrazněte, aby ve zprávě zdůraznil podezření na narkolepsii.</p>
+  <!-- Sekce Najdi specialistu -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Najdi specialistu</h1>
+      <p class="lead text-muted">V České republice je celkem 6 spánkových laboratoří, které se
+        specializují právě na narkolepsii. Diagnostika probíhá spánkovým
+        monitoringem v průběhu noci i dne - noční polysomnografií a testem
+        mnohačetné latence usnutí během dne. Podívej se do mapy a zjisti,
+        jaká spánková laboratoř se nachází v tvojí lokalitě a kam se můžeš
+        v případě potřeby objednat k dalšímu vyšetřením.</p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">TSp8nkovoejrad dakjhaskdh.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">TSp8nkovoejrad dakjhaskdh.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">TSp8nkovoejrad dakjhaskdh.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+          </div>
+        </div>
+
       
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+               <p class="card-text">TSp8nkovoejrad dakjhaskdh.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+          </div>
+        </div>
 
+       
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">TSp8nkovoejrad dakjhaskdh.</p>
+               <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+           </div>
+       </div>
 
      
-          
-          
-          
-          U některých stavů je nutné dojíždět pouze do VFN v Praze, jelikož jako jediná může předepisovat některé léky.
-        epsie je spánková porucha a projevuje se nadměrnou denní spavostí. Mezi další typické příznaky patří především kataplexie, spánková obrna, hypnagogické halucinace, automatické chování a nekvalitní noční spánek.
-        </p>
-    </div>
-  </div>
-</section>
-<!-- Sekce Narkolepsie -->
-<section class="sekce sekce-narkolepsie">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 text-left">
-        <h2>Co je narkolepsie</h2>
-        <p>Narkolepsie je spánková porucha. Projevuje se nadměrnou denní spavostí. Mezi další typické příznaky patří především kataplexie, spánková obrna, hypnagogické halucinace, automatické chování a nekvalitní noční spánek.
-        </p>
-        <button type="button" class="btn btn-primary rounded-pill">Čti dál</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Sekce Najdi specialistu -->
-<section class="sekce sekce-centra">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 text-left">
-        <h2>Najdi specialistu</h2>
-        <p>Projdi mapu odborných pracovišť a zjisti, kde jsou v ČR spánkové laboratoře, které se specializují právě na narkolepsii.
-        </p>
-        <button type="button" class="btn btn-primary rounded-pill">Otevři mapu</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <section class="sekce sekce-uvod">
-          <div class="container">
-            <div class="row">
-            <h3>
-              Text
-            </h3>
-            <p>
-              Text
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <h3>
-              Text
-            </h3>
-            <p>
-              Text
-            </p>
-          </div>
-
-          <div class="col-md-4 text-center">
-            <h3>
-              Text
-            </h3>
-            <p>
-              Text
-            </p>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">TSp8nkovoejrad dakjhaskdh.</p>
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
+
+  <p class="lead text-muted">Vyšetření na narkolepsii probíhá formou dvoudenní hospitalizace, kdy se monitoruje jednak noční spánek tzv. noční polysomnografie, a jednak denní spánek tzv. test mnohačetné latence usnutí. Vše doplňují ještě další menší vyšetření podle indikace lékaře a potřeby. </p>
+      <p class="lead text-muted">Pokud máte pocit, že byste mohli mít narkolepsii a vaše podezření potvrdil i náš test, vytiskněte si jeho výsledek a navštivte svého neurologa (případně praktického lékaře.) Předložte mu výsledný výpis a požádejte, aby vám napsal doporučení na vyšetření ve spánkové laboratoři. Tato specializovaná centra jsou totiž velmi vytížená a bez doporučení ošetřujícího lékaře se tam v podstatě nemáte šanci dostat. Zejména zdůrazněte, aby ve zprávě zdůraznil podezření na narkolepsii.</p>
     
-    <div>Usínám často během dne. Usnu naprosto kdekoliv a kdykoliv.</div>
-    <div>Jsem pořád unavený/á.</div>
-    <div>V noci spím špatně a často se budím.</div>
-    <div>Mám živé sny nebo noční můry.</div>
-    <div>
-      Mívám děsivé halucinace při usínání nebo probouzení. Chci se vzbudit, ale
-      nemůžu se pohnout a ovládnout to.
-    </div>
-    <div>Když se směju, vypínají mi svaly a někdy spadnu i na zem.</div>
-    <div>Potýkám se s častými výkyvy nálad.</div>
-    <div>Cítím se otupěle, zpomaleně a často mě bolí hlava.</div>
-    
-  
-		<!-- Konec sekce Úvod -->
 
-    <!-- Sekce Zjisti příznaky -->
-    <section class="sekce sekce-seda">
-      <div class="container">
-        <h2 id="uvod" class="text-left">
-          Narkolepsie a její příznaky
-				</h2>
-				<div class="row">
-          <div class="text-left">
-            <p>
-              Mozek narkoleptika nefunguje správně. Nedokáže udržet a zajistit normální spánek a bdělost. Touha usnout odpovídá stavu, jako byste 48&nbsp;-&nbsp;72&nbsp;hodin vůbec nespali.
-            </p>
-            <p>
-              Představte si spánek jako jezero a vy se topíte pod vodou. Snažíte se ze všech sil vynořit nad hladinu. Hučí vám v uších, bolí vás hlava, ale vynoření "ze spánku" se nedaří. Umíte si představit, jak dokáže takový trvalý stav zkomplikovat každodenní život?
-            </p>
-
-
-
-						<p>
-              Narkolepsie je autoimunitní neurologické onemocnění, při kterém mozek ztrácí schopnost udržet a zajistit normální spánek a bdělost.
-						</p>
-						<p>
-             Narkolepsii charakterizuje především neovladatelné usínání v průběhu dne. Současně ji provázejí další typické příznaky jako kataplexie, spánková obrna, hypnagogické halucinace, automatické chování a nekvalitní noční spánek.
-						</p>
-						<p>
-              Pro představu těch, kteří narkolepsií netrpí, touha usnout odpovídá tomu, jako byste 48&nbsp;-&nbsp;72&nbsp;hodin vůbec nespali.
-						</p>
-						<p>
-							Představte si spánek jako jezero a vy se topíte pod vodou. Snažíte se ze všech sil vynořit nad hladinu. Hučí vám v uších, bolí vás hlava, ale vynoření "ze spánku" se nedaří. Umíte si představit, jak dokáže takový trvalý stav zkomplikovat každodenní život?
-            </p>
-						<p>
-              Narkolepsie se vyskytuje se u 2&nbsp;-&nbsp;5&nbsp;osob z 10&nbsp;000&nbsp;obyvatel a postihuje lidi všech věkových kategorií. Obvykle začíná v mladém dospělém věku, ale u 1/3&nbsp;pacientů se objeví už v dětství. Postižení bývají stejně často muži i ženy.
-						</p>
-						<p>
-              Existují dvě formy narkolepsie - narkolepsie s kataplexií (typ 1) a narkolepsie bez kataplexie (typ 2).
-						</p>
-						<p>
-              U prvního typu dochází vlivem autoimunitní reakce k destrukci cca&nbsp;70&nbsp;000 nervových buněk v hypotalamu (část mozku), které produkují hypokretin. Ten se zásadním způsobem podílí na regulaci spánku a bdění, včetně stabilizace přechodu spánku a bdění. Mnoho případů narkolepsie totiž vyplývá právě z průniku REM spánku do bdělosti. Důležitá je také genetická predispozice a spoluúčast zevních vlivů (např. infekce, vakcinace, úraz aj.).
-						</p>
-						<p>
-              Příčina nemoci u druhého typu není známá. Pacient mívá obvykle příznaky 3&nbsp;-&nbsp;5&nbsp;let, než se podaří stanovit správnou diagnózu, ale výjimkou není ani 10letá prodleva.
-						</p>
-						<p>
-             Narkolepsie dokáže výrazně narušit každodenní život. Způsobuje potíže ve škole nebo zaměstnání, v rodinném i společenském životě.
-						</p>
-						<p>
-							Narkolepsie je celoživotní onemocnění, ale dá se do jisté míry zmírnit dostupnými léky, které dokáží potlačit příznaky a učinit nemoc snesitelnou. Stejně důležitý je také osobní přístup pacienta, dodržování režimu a správné životosprávy vč. desatera spánkové hygieny.
-						</p>
-            
-            
-          </div>
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <h3>
-              Text
-            </h3>
-            <p>
-              Text
-            </p>
-          </div>
-
-          <div class="col-md-4 text-center">
-            <h3>
-              Text
-            </h3>
-            <p>
-              Text
-            </p>
-          </div>
-
-          <div class="col-md-4 text-center">
-            <h3>
-              Text
-            </h3>
-            <p>
-              Text
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    ABOUT NARCOLEPSY Narcolepsy is a chronic neurologic disorder that affects
-    the brain’s ability to regulate sleep-wake cycles,1-3 causing potentially
-    disabling symptoms such as excessive daytime sleepiness, cataplexy,
-    hypnagogic/hypnopompic hallucinations, sleep paralysis, and sleep
-    disruption.4-6 When undiagnosed or left untreated, narcolepsy can be
-    socially isolating and interfere with daily functioning.4,7 Literature
-    suggests that onset of narcolepsy symptoms occurs most commonly between 10
-    and 25 years of age.4,8,9 Patients often suffer with these symptoms for many
-    years and see multiple healthcare professionals before receiving a
-    diagnosis.10 Early, appropriate diagnosis can help these patients get the
-    treatment they require.
-    <!-- Konec sekce Zjisti příznaky -->
-
-    <!-- Sekce Otestuj se -->
-    <section class="sekce sekce-seda">
-      <div class="container">
-        <h2 id="uvod" class="text-center">
-          Text
-        </h2>
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <h3>
-              Text
-            </h3>
-            <p>
-              Text
-            </p>
-          </div>
-
-          <div class="col-md-4 text-center">
-            <h3>
-              Text
-            </h3>
-            <p>
-              Text
-            </p>
-          </div>
-
-          <div class="col-md-4 text-center">
-            <h3>
-              Text
-            </h3>
-            <p>
-              Text
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Konec sekce Otestuj se -->
+        U některých stavů je nutné dojíždět pouze do VFN v Praze, jelikož jako jediná může předepisovat některé léky.
+      epsie je spánková porucha a projevuje se nadměrnou denní spavostí. Mezi další typické příznaky patří především kataplexie, spánková obrna, hypnagogické halucinace, automatické chování a nekvalitní noční spánek.
+      </p>
 
     <!-- Sekce Najdi specialistu -->
-    <section class="sekce sekce-seda">
+    <section class="section">
       <div class="container">
-        <h2 id="spankova-centra" class="text-center">
+        <h2 id="spankova-centra" class="text-left">
           Centra pro diagnostiku a léčbu poruch spánku a bdění
         </h2>
-
         <div class="row">
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-left">
             <h3>
               Centrum pro poruchy spánku a bdění Neurologická klinika 1. LF UK a
               VFN
             </h3>
-            <a>https://neurologie.lf1.cuni.cz/1LFNK-182.html</a>
+            <p>Pacienti se mohou <strong>objednávat od pondělí do pátku mezi 9:00 - 11:00 hodinou</strong> telefonicky nebo e-mailem.</p>
+            <p><strong>Kontakty</strong></br>Kateřinská 30</br>Praha 2, 128 01</br>Telefon: +420 224 965 534</br>E-mail: spanek@vfn.cz</br><a>https://neurologie.lf1.cuni.cz/1LFNK-182.html</a></p>
+            <p><strong>Ordinační doba (dle objednání)</strong></br>Úterý: 13:00 - 15:00</br>Středa: 09:00 - 13:00</br>Čtvrtek: 10:00 - 15:00</br>Pátek: 12:00 - 14:00</br></p>
           </div>
 
-          <div class="col-md-4 text-center">
+            <div class="col-md-4 text-left">
+              <h3>
+                Centrum pro poruchy spánku a bdění Neurologická klinika 1. LF UK a
+                VFN
+              </h3>
+              <p>Pacienti se mohou <strong>objednávat od pondělí do pátku mezi 9:00 - 11:00 hodinou</strong> telefonicky nebo e-mailem.</p>
+              <p><strong>Kontakty</strong></br>Kateřinská 30</br>Praha 2, 128 01</br>Telefon: +420 224 965 534</br>E-mail: spanek@vfn.cz</br><a>https://neurologie.lf1.cuni.cz/1LFNK-182.html</a></p>
+              <p><strong>Ordinační doba (dle objednání)</strong></br>Úterý: 13:00 - 15:00</br>Středa: 09:00 - 13:00</br>Čtvrtek: 10:00 - 15:00</br>Pátek: 12:00 - 14:00</br></p>
+            </div>
+
+              <div class="col-md-4 text-left">
+                <h3>
+                  Centrum pro poruchy spánku a bdění Neurologická klinika 1. LF UK a
+                  VFN
+                </h3>
+                <p>Pacienti se mohou <strong>objednávat od pondělí do pátku mezi 9:00 - 11:00 hodinou</strong> telefonicky nebo e-mailem.</p>
+                <p><strong>Kontakty</strong></br>Kateřinská 30</br>Praha 2, 128 01</br>Telefon: +420 224 965 534</br>E-mail: spanek@vfn.cz</br><a>https://neurologie.lf1.cuni.cz/1LFNK-182.html</a></p>
+                <p><strong>Ordinační doba (dle objednání)</strong></br>Úterý: 13:00 - 15:00</br>Středa: 09:00 - 13:00</br>Čtvrtek: 10:00 - 15:00</br>Pátek: 12:00 - 14:00</br></p>
+              </div>
+          </div>
+      </div>
+
+
+          <div class="col-md-4 text-left">
             <h3>
               Institut spánkové medicíny, Národní ústav duševního zdraví,
               Klecany
@@ -297,7 +208,7 @@
             <a>https://www.nudz.cz/lecebna-pece/spankova-medicina/profil/</a>
           </div>
 
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-left">
             <h3>Neurologická klinika FN Brno - Bohunice</h3>
             <p>
               Centrum pro diagnostiku a léčbu poruch spánku a bdění (12. patro
@@ -306,7 +217,7 @@
             <a>https://www.fnbrno.cz/neurologicka-klinika/k1471</a>
           </div>
 
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-left">
             <h3>Centrum pro poruchy spánku a bdění FN Ostrava</h3>
             <p>
               Centrum pro poruchy spánku a bdění (budova L Lůžková část, 6.
@@ -316,7 +227,7 @@
             <a>https://www.fno.cz/neurologicka-klinika/odborna-centra</a>
           </div>
 
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-left">
             <h3>
               Centrum pro poruchy spánku, Nemocnice České Budějovice, a.s.
             </h3>
@@ -328,7 +239,7 @@
             <a>http://www.nemcb.cz/oddeleni/centrum-pro-poruchy-spanku/</a>
           </div>
 
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-left">
             <h3>Centrum pro poruchy spánku a biorytmů FN Hradec Králové</h3>
             <p>
               Neurologická klinika Ordinační doby a kontakt k objednání: Poradna
@@ -359,6 +270,24 @@
     </div>
     <!-- Konec sekce Najdi specialistu -->
 
-    <!-- JavaScript goes here -->
+    <!-- footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="footer-author">
+            <p>
+              &copy;2020, Czechitas, Petra Pavlisová & Lenka Erbenová. Ilustrace
+              Jenni Holtz, Martin Otevřel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
