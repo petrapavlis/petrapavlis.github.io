@@ -169,8 +169,8 @@ p a:hover {
   background-color: #f57c00;
   border-color: #f57c00;
   font-weight: 700;
-  padding: 0.5rem 1.75rem 0.5rem 1.75rem;
-  width: 180px;
+  padding: 0rem 1.75rem 0rem 1.75rem;
+  width: 210px;
   margin-top: 0.5rem;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
     background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -188,8 +188,8 @@ p a:hover {
   color: #f57c00;
   border-color: #f57c00;
   font-weight: 500;
-  padding: 0.5rem 1.75rem 0.5rem 1.75rem;
-  width: 180px;
+  padding: 0rem 1.75rem 0rem 1.75rem;
+  width: 210px;
   margin-top: 0.5rem;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
     background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
@@ -200,6 +200,14 @@ p a:hover {
   color: #f57c00;
   background-color: #fafafa;
   border-color: #ef6c00;
+}
+
+.btn-primary a {
+  color: white;
+}
+
+.btn-outline-secondary a {
+  color: #f57c00;
 }
 
 /* ----- FOOTER ----- */
@@ -238,7 +246,7 @@ p a:hover {
     background-image: url(../images/falling-asleep-no-background.png),
       url(../images/dark-blue-watercolor-header.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: top 20% right 5%, bottom right;
+    background-position: top 20% right 8%, bottom right;
     background-size: 50%, cover;
     background-repeat: no-repeat;
     background-color: #0c2357;
