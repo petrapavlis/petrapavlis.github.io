@@ -147,6 +147,7 @@ h2 {
 }
 
 h3 {
+  color: #f57c00;
   font-size: 1.25rem;
   font-weight: 700;
   margin-top: 2rem;
@@ -159,6 +160,11 @@ p a {
 
 p a:hover {
   color: #ef6c00;
+}
+
+.form p {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
 }
 
 /* ----- BUTTON ----- */
@@ -208,6 +214,15 @@ p a:hover {
 
 .btn-outline-secondary a {
   color: #f57c00;
+}
+
+.icon-social {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.icon-social img {
+  margin-left: 2rem;
 }
 
 /* ----- FOOTER ----- */

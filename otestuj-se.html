@@ -1,176 +1,571 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Narkolepsie</title>
-    <!-- Bootstrap css goes here-->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <!-- my CSS goes here -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Google Font: -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Webová stránka pro primární sebediagnostiku narkolepsie."
+    />
+    <meta name="author" content="Petra Pavlisová, Lenka Erbenová" />
+    <title>Usínám - Otestuj se</title>
 
+    <!-- Google Font: Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font: Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap styly -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- naše CSS styly -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-		<section>
-      <div>Test příznaků narkolepsie - 1. část</div>
-      <div>
-        Pokud pociťujete nadměrnou únavu a usínáte během dne, mohlo by jít o
-        spánkovou poruchu, v tomto případě o narkolepsii. Udělejte si test a
-        zjistěte, jak na tom jste.
-      </div>
-      <div>Epworthská škála spavosti (ESS)</div>
-      <div>Otázky zaměřené na ospalost a usínání během dne.</div>
-      <div>
-        Vyberte vždy jednu možnost, která nejlépe vystihuje váš stav a jak moc
-        je pravděpodobné, že byste v dané situaci usnuli.
-      </div>
-      <div>
-        V sedě při čtení
-        <ul>
-          <li value="0">Nikdy neusnu</li>
-          <li value="1">Slabá pravděpodobnost usnutí</li>
-          <li value="2">Střední pravděpodobnost usnutí</li>
-          <li value="3">Vysoká pravděpodobnost usnutí</li>
+    <!-- Main menu -->
+    <nav class="navbar navbar-expand-md navbar-light py-0">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/spaci_logo_light.png"
+          width="64"
+          height="64"
+          class="d-inline-block align-middle"
+          alt=""
+          loading="lazy"
+      /></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#mojeNavigace"
+        aria-controls="mojeNavigace"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mojeNavigace">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="co-je-narkolepsie.html"
+              >Co je narkolepsie</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="najdi-specialistu.html"
+              >Najdi specialistu</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="otestuj-se.html">Otestuj se</a>
+          </li>
+          <!--<li class="nav-item"><a class="nav-link" href="/">Zeptej se</a></li>-->
         </ul>
       </div>
-      <div>
-        Při sledování televize
-        <ul>
-          <li value="0">Nikdy neusnu</li>
-          <li value="1">Slabá pravděpodobnost usnutí</li>
-          <li value="2">Střední pravděpodobnost usnutí</li>
-          <li value="3">Vysoká pravděpodobnost usnutí</li>
-        </ul>
-      </div>
-      <div>
-        Při sezení bez aktivity na veřejném místě - např. v divadle, v kině, na
-        jednání, na přednášce apod.
-        <ul>
-          <li value="0">Nikdy neusnu</li>
-          <li value="1">Slabá pravděpodobnost usnutí</li>
-          <li value="2">Střední pravděpodobnost usnutí</li>
-          <li value="3">Vysoká pravděpodobnost usnutí</li>
-        </ul>
-      </div>
-      <div>
-        Při hodinové jízdě autem jako spolujezdec
-        <ul>
-          <li value="0">Nikdy neusnu</li>
-          <li value="1">Slabá pravděpodobnost usnutí</li>
-          <li value="2">Střední pravděpodobnost usnutí</li>
-          <li value="3">Vysoká pravděpodobnost usnutí</li>
-        </ul>
-      </div>
-      <div>
-        Při odpoledním odpočinku, když si můžete lehnout
-        <ul>
-          <li value="0">Nikdy neusnu</li>
-          <li value="1">Slabá pravděpodobnost usnutí</li>
-          <li value="2">Střední pravděpodobnost usnutí</li>
-          <li value="3">Vysoká pravděpodobnost usnutí</li>
-        </ul>
-      </div>
-      <div>
-        Při rozhovoru v sedě
-        <ul>
-          <li value="0">Nikdy neusnu</li>
-          <li value="1">Slabá pravděpodobnost usnutí</li>
-          <li value="2">Střední pravděpodobnost usnutí</li>
-          <li value="3">Vysoká pravděpodobnost usnutí</li>
-        </ul>
-      </div>
-      <div>
-        V sedě, v klidu, po jídle, bez alkoholu Nikdy neusnu
-        <ul>
-          <li value="0">Nikdy neusnu</li>
-          <li value="1">Slabá pravděpodobnost usnutí</li>
-          <li value="2">Střední pravděpodobnost usnutí</li>
-          <li value="3">Vysoká pravděpodobnost usnutí</li>
-        </ul>
-      </div>
-      <div>
-        V autě při několikaminutovém čekání v dopravní zácpě Nikdy neusnu
-        <ul>
-          <li value="0">Nikdy neusnu</li>
-          <li value="1">Slabá pravděpodobnost usnutí</li>
-          <li value="2">Střední pravděpodobnost usnutí</li>
-          <li value="3">Vysoká pravděpodobnost usnutí</li>
-        </ul>
-      </div>
-      <div>
-        Vaše skóre ESS je
-      </div>
-      <div>
-        Skóre ESS do hodnoty 10 je normální stav. Pokud vám vyšlo více než 10,
-        naznačuje to nadměrnou spavost během dne. Skóre 16 nebo vyšší udává
-        vysokou míru nadměrné denní spavosti. Pokud vám vyšlo, že trpíte
-        nadměrnou denní spavostí, měli byste svoje ESS skóre prodiskutovat se
-        spánkovým specialistou (nebo alespoň s neurologem) a nechat se vyšetřit
-        ve spánkové laboratoři.
+    </nav>
+
+    <!-- Sekce Otestuj se -->
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1>Otestuj se</h1>
+        <p class="lead">
+        Přepadá tě spánek během dne, který nedokážeš vůli potlačit? Cítíš trvalou únavu a vyčerpanost? Mohla by to být narkolepsie. Udělej si krátký test, který zjišťuje přítomnost a míru typických příznaků. Test nemá v žádném případě nahradit konzultaci se spánkovým specialistou - pouze ten může vyhodnotit příznaky a stanovit diagnózu. Výsledek testu můžeš použít jako výchozí bod pro další kontakt s lékařem - jako nástroj pro usnadnění a urychlení diagnózy.</p>
       </div>
     </section>
 
-    <section>
-      <div>Test příznaků narkolepsie - 2. část</div>
-      <div>
-        Pokud pociťujete nadměrnou únavu a usínáte během dne, mohlo by jít o
-        spánkovou poruchu, v tomto případě o narkolepsii. Udělejte si test a
-        zjistěte, jak na tom jste. Švýcarská škála narkolepsie (SNS) Otázky
-        zaměřené na příznaky narkolepsie a kataplexie. Vyberte vždy jednu
-        možnost, která nejlépe vystihuje váš stav.
+    <!-- Jak funguje test -->
+    <section id="metody" class="section">
+      <div class="container">
+        <h2>Jak test funguje</h2>
+        <p>
+        Test má dvě části. První část zjišťuje nadměrnou denní spavost podle Epworthské škály spavosti (ESS - Epworth Sleep Scale). Tuto metodu používá většina pracovišť, která se zabývají poruchami spánku, v každodenní klinické praxi. Druhá část funguje obdobně na základě Švýcarské škály narkolepsie (SNS - Swiss Narcolepsy Scale) a zabývá se specificky už jen symptomy, které se objevují čistě jen u narkolepsie prvního typu tj. narkolepsie s kataplexií (nadměrná denní spavost sama o sobě totiž může být projevem i jiných spánkových poruch).
+        </p>
       </div>
-      <div>
-        Jak často se vám nedaří usnout?
-        <ul>
-          <li>Nikdy</li>
-          <li>Zřídka (méně než jednou za měsíc)</li>
-          <li>Občas (jednou až třikrát za měsíc)</li>
-          <li>Často (jednou až dvakrát za týden)</li>
-          <li>Skoro vždy</li>
-        </ul>
+    </section>
+    <hr class="featurette-divider" />
+
+    <!-- Test ESS -->
+    <section class="section text-left form">
+      <div class="container">
+        <h2>Nadměrná denní spavost podle ESS</h2>
+        <p>
+          Jak pravděpodobné je, že v následujících situacích začneš usínat nebo usneš? Nejde jen o pocit únavy, ale skutečně o usínání. Z nabízených možností vyber jednu odpověď, která nejlépe odpovídá tvému stavu v poslední době. 
+        </p>
+        <p><strong>V sedě při čtení</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS0" value="0" checked>
+          <label class="form-check-label" for="ESS0">
+            Nikdy neusnu
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Slabá pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Střední pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Vysoká pravděpodobnost usnutí
+            </label>
+        </div>
+
+        <p><strong>Při sledování televize</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS0" value="0" checked>
+          <label class="form-check-label" for="ESS0">
+            Nikdy neusnu
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Slabá pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Střední pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Vysoká pravděpodobnost usnutí
+            </label>
+        </div>
+
+        <p><strong>Při sezení bez aktivity na veřejném místě - např. v divadle, v kině, na
+          jednání, na přednášce apod.</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS0" value="0" checked>
+          <label class="form-check-label" for="ESS0">
+            Nikdy neusnu
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Slabá pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Střední pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Vysoká pravděpodobnost usnutí
+            </label>
+        </div>
+
+        <p><strong>Při hodinové jízdě autem jako spolujezdec</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS0" value="0" checked>
+          <label class="form-check-label" for="ESS0">
+            Nikdy neusnu
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Slabá pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Střední pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Vysoká pravděpodobnost usnutí
+            </label>
+        </div>
+
+        <p><strong>Při odpoledním odpočinku, když si můžete lehnout</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS0" value="0" checked>
+          <label class="form-check-label" for="ESS0">
+            Nikdy neusnu
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Slabá pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Střední pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Vysoká pravděpodobnost usnutí
+            </label>
+        </div>
+
+        <p><strong>Při rozhovoru v sedě</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS0" value="0" checked>
+          <label class="form-check-label" for="ESS0">
+            Nikdy neusnu
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Slabá pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Střední pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Vysoká pravděpodobnost usnutí
+            </label>
+        </div>
+
+        <p><strong>V sedě, v klidu, po jídle, bez alkoholu</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS0" value="0" checked>
+          <label class="form-check-label" for="ESS0">
+            Nikdy neusnu
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Slabá pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Střední pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Vysoká pravděpodobnost usnutí
+            </label>
+        </div>
+
+        <p><strong>V autě při několikaminutovém čekání v dopravní zácpě</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS0" value="0" checked>
+          <label class="form-check-label" for="ESS0">
+            Nikdy neusnu
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Slabá pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Střední pravděpodobnost usnutí
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Vysoká pravděpodobnost usnutí
+            </label>
+        </div>
+      </section>
+    <hr class="featurette-divider" />
+
+    <!-- Test SNS -->
+    <section class="section text-left form">
+      <div class="container">
+        <h2>Symptomy narkolepsie s kataplexií podle SNS</h2>
+        <p>
+        Vyberte vždy jednu možnost, která nejlépe vystihuje váš stav.
+        </p>
+
+        <p><strong>Jak často se vám nedaří usnout?</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Nikdy
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Zřídka (méně než jednou za měsíc)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Občas (jednou až třikrát za měsíc)
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Často (jednou až dvakrát za týden)
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Skoro vždy
+            </label>
+        </div>
+
+        <p><strong>Jak často se cítíte špatně nebo neodpočatě ráno po nočním spánku?</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Nikdy
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Zřídka (méně než jednou za měsíc)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Občas (jednou až třikrát za měsíc)
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Často (jednou až dvakrát za týden)
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Skoro vždy
+            </label>
+        </div>
+
+        <p><strong>Jak často si zdřímnete během dne?</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Nikdy
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Chtěl/a bych, ale nemůžu
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Jednou až dvakrát týdně
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Tři až pětkrát týdně
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Denně
+            </label>
+        </div>
+
+        <p><strong>Jak často zažíváte slabost v kolenou či podlomení kolenou,
+          když projevujete emoce jako smích, radost nebo zlost?</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Nikdy
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Zřídka (méně než jednou za měsíc)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Občas (jednou až třikrát za měsíc)
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Často (jednou až dvakrát za týden)
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Skoro vždy
+            </label>
+        </div>
+
+        <p><strong>Jak často zažíváte oslabení či pokles čelisti během emocí jako smích,
+          radost nebo zlost?</strong></p>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS1" value="1" checked>
+          <label class="form-check-label" for="ESS1">
+            Nikdy
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS2" value="2">
+          <label class="form-check-label" for="ESS2">
+            Zřídka (méně než jednou za měsíc)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Občas (jednou až třikrát za měsíc)
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Často (jednou až dvakrát za týden)
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="ESS" id="ESS3" value="3">
+          <label class="form-check-label" for="ESS3">
+            Skoro vždy
+            </label>
+        </div>
       </div>
-      <div>
-        Jak často se cítíte špatně nebo neodpočatě ráno po nočním spánku?
-        <ul>
-          <li>Nikdy</li>
-          <li>Zřídka (méně než jednou za měsíc)</li>
-          <li>Občas (jednou až třikrát za měsíc)</li>
-          <li>Často (jednou až dvakrát za týden)</li>
-          <li>Skoro vždy</li>
-        </ul>
+    </section>
+    <hr class="featurette-divider" />
+
+    <!-- Spočítej skóre -->
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary">
+              <a class="nav-link" href="otestuj-se.html">Ukaž výsledek</a>
+            </button>
+          </div>
+        </div>
       </div>
-      <div>
-        Jak často si zdřímnete během dne?
-        <ul>
-          <li>Nikdy</li>
-          <li>Chtěl/a bych, ale nemůžu</li>
-          <li>Jednou až dvakrát týdně</li>
-          <li>Tři až pětkrát týdně</li>
-          <li>Denně</li>
-        </ul>
-        <div>Jak často zažíváte slabost v kolenou či podlomení kolenou,
-          když projevujete emoce jako smích, radost nebo zlost?
-          <ul>
-          <li>Nikdy</li>
-          <li>Zřídka (méně než jednou za měsíc)</li>
-          <li>Občas (jednou až třikrát za měsíc)</li>
-          <li>Často (jednou až dvakrát za týden)</li>
-          <li>Skoro vždy</li>
-          </ul>
+    </section>
+    
+    <!-- Vyhodnocení -->
+    <section id="metody" class="section">
+      <div class="container">
+        <h2>Vyhodnocení</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-left">
+            <h3>
+              Vaše skóre ESS:
+            </h3>
+            <p>
+              Skóre 0-10 je normální stav.
+            </p>
+            <p>
+              Skóre 11-16 naznačuje nadměrnou spavost během dne - pokud cítíš, že ti spavost způsobuje potíže, vyhledej odborníka na spánkovou medicínu.
+            </p>
+            <p>
+              Skóre 16 a více udává vysokou míru nadměrné denní spavosti - svůj výsledek určitě konzultuj se spánkovým specialistou a nech se vyšetřit ve spánkové laboratoři.
+            </p>
+          </div>
+          <div class="col-md-6 text-left">
+            <h3>
+              Vaše skóre SNS:
+            </h3>
+            <p>
+              Skóre 0 a vyšší je normální stav.
+            </p>
+            <p>
+              Skóre méně než nula (záporné číslo) udává narkolepsii s kataplexií - svůj výsledek určitě konzultuj se spánkovým specialistou a nech se vyšetřit ve spánkové laboratoři.
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
-        Jak často zažíváte oslabení či pokles čelisti během emocí jako smích,
-        radost nebo zlost? 
-        <ul>
-          <li>Nikdy</li>
-          <li>Zřídka (méně než jednou za měsíc)</li>
-          <li>Občas (jednou až třikrát za měsíc)</li>
-          <li>Často (jednou až dvakrát za týden)</li>
-          <li>Skoro vždy</li>
-          </ul>
+    </section>
+    <hr class="featurette-divider" />
+
+    <!-- Dolní navigace -->
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary">
+              <a class="nav-link" href="najdi-specialistu.html">Najdi specialistu</a>
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+              <a class="nav-link" href="index.html">Na hlavní stranu</a>
+            </button>
+          </div>
+        </div>
       </div>
-      <div>Vaše skóre SNS je</div>
-<!-- JavaScript goes here -->
+    </section>
+
+    <!-- footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="footer-author">
+            <p>
+              &copy;2020, Czechitas, Petra Pavlisová & Lenka Erbenová. Ilustrace
+              Jenni Holtz, Martin Otevřel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
