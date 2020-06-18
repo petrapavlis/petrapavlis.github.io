@@ -73,8 +73,7 @@
           </div>
         </div>  -->
         <form class="formESS">
-          <div class="ess-left">
-            <div class="ess-question">
+            <div class="question">
               <div class="questDescription">
                 <p>V sedě při čtení</p>
                 <p>1&nbsp;z&nbsp;8</p>
@@ -98,7 +97,7 @@
                 </div>
               </div>
             </div>
-            <div class="ess-question">
+            <div class="question">
               <div class="questDescription">
                 <p>Při sledování televize</p>
                 <p>2&nbsp;z&nbsp;8</p>
@@ -122,7 +121,7 @@
                 </div>
               </div>
             </div>
-            <div class="ess-question">
+            <div class="question">
               <div class="questDescription">
                 <p>Při sezení bez aktivity na veřejném místě - např. v divadle, v kině, na
                   jednání, na přednášce apod.</p>
@@ -147,7 +146,7 @@
                 </div>
               </div>
             </div>
-            <div class="ess-question">
+            <div class="question">
               <div class="questDescription">
                 <p>Při hodinové jízdě autem jako spolujezdec</p>
                 <p>4&nbsp;z&nbsp;8</p>
@@ -171,33 +170,31 @@
                 </div>
               </div>
             </div>
-        </div>
-        <div class="ess-right">
-          <div class="ess-question">
-            <div class="questDescription">
-              <p>Při odpoledním odpočinku, když si můžete lehnout</p>
-              <p>5&nbsp;z&nbsp;8</p>
+            <div class="question">
+              <div class="questDescription">
+                <p>Při odpoledním odpočinku, když si můžete lehnout</p>
+                <p>5&nbsp;z&nbsp;8</p>
+              </div>
+              <div class="radio-toolbar">
+                <div class="radio-choice">
+                  <input type="radio" id="ess-quest5-choice0" name="ess-quest5" value="0">
+                  <label for="ess-quest5-choice0">0</label><span><strong>Nikdy</strong> neusnu</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="ess-quest5-choice1" name="ess-quest5" value="1">
+                  <label for="ess-quest5-choice1">1</label><span><strong>Slabá</strong> pravděpodobnost usnutí</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="ess-quest5-choice2" name="ess-quest5" value="2">
+                  <label for="ess-quest5-choice2">2</label><span><strong>Střední</strong> pravděpodobnost usnutí</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="ess-quest5-choice3" name="ess-quest5" value="3">
+                  <label for="ess-quest5-choice3">3</label><span><strong>Vysoká</strong> pravděpodobnost usnutí</span>
+                </div>
+              </div>
             </div>
-            <div class="radio-toolbar">
-              <div class="radio-choice">
-                <input type="radio" id="ess-quest5-choice0" name="ess-quest5" value="0">
-                <label for="ess-quest5-choice0">0</label><span><strong>Nikdy</strong> neusnu</span>
-              </div>
-              <div class="radio-choice">
-                <input type="radio" id="ess-quest5-choice1" name="ess-quest5" value="1">
-                <label for="ess-quest5-choice1">1</label><span><strong>Slabá</strong> pravděpodobnost usnutí</span>
-              </div>
-              <div class="radio-choice">
-                <input type="radio" id="ess-quest5-choice2" name="ess-quest5" value="2">
-                <label for="ess-quest5-choice2">2</label><span><strong>Střední</strong> pravděpodobnost usnutí</span>
-              </div>
-              <div class="radio-choice">
-                <input type="radio" id="ess-quest5-choice3" name="ess-quest5" value="3">
-                <label for="ess-quest5-choice3">3</label><span><strong>Vysoká</strong> pravděpodobnost usnutí</span>
-              </div>
-            </div>
-          </div>
-          <div class="ess-question">
+          <div class="question">
             <div class="questDescription">
               <p>Při rozhovoru v sedě</p>
               <p>6&nbsp;z&nbsp;8</p>
@@ -221,7 +218,7 @@
               </div>
             </div>
           </div>
-          <div class="ess-question">
+          <div class="question">
             <div class="questDescription">
               <p>V sedě, v klidu, po jídle, bez alkoholu</p>
                 <p>7&nbsp;z&nbsp;8</p>
@@ -245,7 +242,7 @@
               </div>
             </div>
           </div>
-          <div class="ess-question">
+          <div class="question">
             <div class="questDescription">
               <p>V autě při několikaminutovém čekání v dopravní zácpě</p>
               <p>8&nbsp;z&nbsp;8</p>
@@ -269,77 +266,182 @@
               </div>
             </div>
           </div>
-      </div>
+          <input class="submit" id="submitESS" type="submit" value="Vypočítat" />
       </form>
-
-      <div class="ess-result">
-        <h3>Vaše skóre ESS</h3>
-        Skóre ESS do hodnoty 10 je normální stav. Pokud vám vyšlo více než 10,
+      <div class="result">
+        <div class="resultDescription">Vaše skóre ESS je</div>
+        <div class="score">00</div>
+      </div>
+      <p>Skóre ESS do hodnoty 10 je normální stav. Pokud vám vyšlo více než 10,
         naznačuje to nadměrnou spavost během dne. Skóre 16 nebo vyšší udává
         vysokou míru nadměrné denní spavosti. Pokud vám vyšlo, že trpíte
         nadměrnou denní spavostí, měli byste svoje ESS skóre prodiskutovat se
         spánkovým specialistou (nebo alespoň s neurologem) a nechat se vyšetřit
-        ve spánkové laboratoři.
-      </div>
+        ve spánkové laboratoři.</p>
       <h2>Test příznaků narkolepsie - 2. část</h2>
-      <div>
-        Pokud pociťujete nadměrnou únavu a usínáte během dne, mohlo by jít o
-        spánkovou poruchu, v tomto případě o narkolepsii. Udělejte si test a
-        zjistěte, jak na tom jste. Švýcarská škála narkolepsie (SNS) Otázky
-        zaměřené na příznaky narkolepsie a kataplexie. Vyberte vždy jednu
-        možnost, která nejlépe vystihuje váš stav.
-      </div>
-      <div>
-        Jak často se vám nedaří usnout?
-        <ul>
-          <li>Nikdy</li>
-          <li>Zřídka (méně než jednou za měsíc)</li>
-          <li>Občas (jednou až třikrát za měsíc)</li>
-          <li>Často (jednou až dvakrát za týden)</li>
-          <li>Skoro vždy</li>
-        </ul>
-      </div>
-      <div>
-        Jak často se cítíte špatně nebo neodpočatě ráno po nočním spánku?
-        <ul>
-          <li>Nikdy</li>
-          <li>Zřídka (méně než jednou za měsíc)</li>
-          <li>Občas (jednou až třikrát za měsíc)</li>
-          <li>Často (jednou až dvakrát za týden)</li>
-          <li>Skoro vždy</li>
-        </ul>
-      </div>
-      <div>
-        Jak často si zdřímnete během dne?
-        <ul>
-          <li>Nikdy</li>
-          <li>Chtěl/a bych, ale nemůžu</li>
-          <li>Jednou až dvakrát týdně</li>
-          <li>Tři až pětkrát týdně</li>
-          <li>Denně</li>
-        </ul>
-        <div>Jak často zažíváte slabost v kolenou či podlomení kolenou,
-          když projevujete emoce jako smích, radost nebo zlost?
-          <ul>
-          <li>Nikdy</li>
-          <li>Zřídka (méně než jednou za měsíc)</li>
-          <li>Občas (jednou až třikrát za měsíc)</li>
-          <li>Často (jednou až dvakrát za týden)</li>
-          <li>Skoro vždy</li>
-          </ul>
-      </div>
-      <div>
-        Jak často zažíváte oslabení či pokles čelisti během emocí jako smích,
-        radost nebo zlost? 
-        <ul>
-          <li>Nikdy</li>
-          <li>Zřídka (méně než jednou za měsíc)</li>
-          <li>Občas (jednou až třikrát za měsíc)</li>
-          <li>Často (jednou až dvakrát za týden)</li>
-          <li>Skoro vždy</li>
-          </ul>
-      </div>
-      <div>Vaše skóre SNS je</div>
+      <p>Pokud pociťujete nadměrnou únavu a usínáte během dne, mohlo by jít o
+      spánkovou poruchu, v tomto případě o narkolepsii. Udělejte si test a
+      zjistěte, jak na tom jste. Švýcarská škála narkolepsie (SNS) Otázky
+      zaměřené na příznaky narkolepsie a kataplexie. Vyberte vždy jednu
+      možnost, která nejlépe vystihuje váš stav.</p>
+      <h3>Švýcarská škála narkolepsie (SNS)</h3>
+      <div class="SNS">
+        <div class="container">
+          <div class="formHeader">
+            <div class="situation">Interaktivní škála</div>
+          </div>
+          <form class="formSNS">
+            <div class="question">
+              <div class="questDescription">
+                <p>Jak často se vám nedaří usnout?</p>
+                <p>1&nbsp;z&nbsp;5</p>
+              </div>
+              <div class="radio-toolbar">
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest1-choice1" name="sns-quest1" value="1">
+                  <label for="sns-quest1-choice1">1</label><span><strong>Nikdy</strong></span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest1-choice2" name="sns-quest1" value="2">
+                  <label for="sns-quest1-choice2">2</label><span><strong>Zřídka</strong> (méně než jednou za měsíc)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest1-choice3" name="sns-quest1" value="3">
+                  <label for="sns-quest1-choice3">3</label><span><strong>Občas</strong> (jednou až třikrát za měsíc)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest1-choice4" name="sns-quest1" value="4">
+                  <label for="sns-quest1-choice4">4</label><span><strong>Často</strong> (jednou až dvakrát za týden)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest1-choice5" name="sns-quest1" value="5">
+                  <label for="sns-quest1-choice5">5</label><span><strong>Skoro vždy</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="question">
+              <div class="questDescription">
+                <p>Jak často se cítíte špatně nebo neodpočatě ráno po nočním spánku?</p>
+                <p>2&nbsp;z&nbsp;5</p>
+              </div>
+              <div class="radio-toolbar">
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest2-choice1" name="sns-quest2" value="1">
+                  <label for="sns-quest2-choice1">1</label><span><strong>Nikdy</strong></span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest2-choice2" name="sns-quest2" value="2">
+                  <label for="sns-quest2-choice2">2</label><span><strong>Zřídka</strong> (méně než jednou za měsíc)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest2-choice3" name="sns-quest2" value="3">
+                  <label for="sns-quest2-choice3">3</label><span><strong>Občas</strong> (jednou až třikrát za měsíc)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest2-choice4" name="sns-quest2" value="4">
+                  <label for="sns-quest2-choice4">4</label><span><strong>Často</strong> (jednou až dvakrát za týden)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest2-choice5" name="sns-quest2" value="5">
+                  <label for="sns-quest2-choice5">5</label><span><strong>Skoro vždy</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="question">
+              <div class="questDescription">
+                <p>Jak často si zdřímnete během dne?</p>
+                <p>3&nbsp;z&nbsp;5</p>
+              </div>
+              <div class="radio-toolbar">
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest3-choice1" name="sns-quest3" value="1">
+                  <label for="sns-quest3-choice1">1</label><span><strong>Nikdy</strong></span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest3-choice2" name="sns-quest3" value="2">
+                  <label for="sns-quest3-choice2">2</label><span><strong>Chtěl/a bych, ale nemůžu</strong></span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest3-choice3" name="sns-quest3" value="3">
+                  <label for="sns-quest3-choice3">3</label><span><strong>Jednou až dvakrát týdně</strong></span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest3-choice4" name="sns-quest3" value="4">
+                  <label for="sns-quest3-choice4">4</label><span><strong>Tři až pětkrát týdně</strong></span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest3-choice5" name="sns-quest3" value="5">
+                  <label for="sns-quest3-choice5">5</label><span><strong>Denně</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="question">
+              <div class="questDescription">
+                <p>Jak často zažíváte slabost v kolenou či podlomení kolenou,
+                  když projevujete emoce jako smích, radost nebo zlost?</p>
+                <p>4&nbsp;z&nbsp;5</p>
+              </div>
+              <div class="radio-toolbar">
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest4-choice1" name="sns-quest4" value="1">
+                  <label for="sns-quest4-choice1">1</label><span><strong>Nikdy</strong></span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest4-choice2" name="sns-quest4" value="2">
+                  <label for="sns-quest4-choice2">2</label><span><strong>Zřídka</strong> (méně než jednou za měsíc)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest4-choice3" name="sns-quest4" value="3">
+                  <label for="sns-quest4-choice3">3</label><span><strong>Občas</strong> (jednou až třikrát za měsíc)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest4-choice4" name="sns-quest4" value="4">
+                  <label for="sns-quest4-choice4">4</label><span><strong>Často</strong> (jednou až dvakrát za týden)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest4-choice5" name="sns-quest4" value="5">
+                  <label for="sns-quest4-choice5">5</label><span><strong>Skoro vždy</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="question">
+              <div class="questDescription">
+                <p>Jak často zažíváte oslabení či pokles čelisti během emocí jako smích,
+                  radost nebo zlost? </p>
+                <p>5&nbsp;z&nbsp;5</p>
+              </div>
+              <div class="radio-toolbar">
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest5-choice1" name="sns-quest5" value="1">
+                  <label for="sns-quest5-choice1">1</label><span><strong>Nikdy</strong></span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest5-choice2" name="sns-quest5" value="2">
+                  <label for="sns-quest5-choice2">2</label><span><strong>Zřídka</strong> (méně než jednou za měsíc)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest5-choice3" name="sns-quest5" value="3">
+                  <label for="sns-quest5-choice3">3</label><span><strong>Občas</strong> (jednou až třikrát za měsíc)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest5-choice4" name="sns-quest5" value="4">
+                  <label for="sns-quest5-choice4">4</label><span><strong>Často</strong> (jednou až dvakrát za týden)</span>
+                </div>
+                <div class="radio-choice">
+                  <input type="radio" id="sns-quest5-choice5" name="sns-quest5" value="5">
+                  <label for="sns-quest5-choice5">5</label><span><strong>Skoro vždy</strong></span>
+                </div>
+              </div>
+            </div>
+            <input class="submit" id="submitSNS" type="submit" value="Vypočítat" />
+          </form>
+          <div class="result">
+            <div class="resultDescription">Vaše skóre SNS je</div>
+            <div class="score">00</div>
+          </div>
+            
+          <!-- vysledek -->
+
     </section>
     <!-- footer -->
 	  <div id="footer">
