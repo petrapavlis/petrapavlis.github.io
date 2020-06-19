@@ -1,128 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Webová stránka pro primární sebediagnostiku narkolepsie."
+    />
+    <meta name="author" content="Petra Pavlisová, Lenka Erbenová" />
+    <title>Usínám - Znáš narkolepsii?</title>
 
-<head>
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Webová stránka pro primární sebediagnostiku narkolepsie.">
-<meta name="author" content="Petra Pavlisová, Lenka Erbenová">
-<title>Usínám · Znáš narkolepsii?</title>
+    <!-- Google Font: Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font: Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- Google Font: Lora -->
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!-- Google Font: Montserrat -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!-- Google Font: Roboto -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap styly -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- naše CSS styly -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<!-- Bootstrap styly -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- naše CSS styly -->
-<link rel="stylesheet" href="css/style.css">
-</head>
- 
+  <body>
+    <!-- Main menu -->
+    <nav class="navbar navbar-expand-md navbar-light py-0">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/spaci_logo_light.png"
+          width="64"
+          height="64"
+          class="d-inline-block align-middle"
+          alt=""
+          loading="lazy"
+      /></a>
 
-<body>
-<!-- Main menu -->
-<nav class="navbar fixed-top navbar-expand-md navbar-dark py-0">
-	<div class="container">
-		<a class="navbar-brand" href="#">
-			<img src="images/spaci_logo_dark-transparent.png" width="80" height="80" class="d-inline-block align-middle" alt="" loading="lazy"></a>
-		
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mojeNavigace" aria-controls="mojeNavigace" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		
-		<div class="collapse navbar-collapse" id="mojeNavigace">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="nav-link" href="#narkolepsie">Co je narkolepsie</a></li>
-				<li class="nav-item"><a class="nav-link" href="#centra">Najdi specialistu</a></li>
-				<li class="nav-item"><a class="nav-link" href="#test">Otestuj se</a></li>
-				<li class="nav-item"><a class="nav-link" href="#kontakt">Zeptej se</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#mojeNavigace"
+        aria-controls="mojeNavigace"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- Header -->
-<header class="section-header">
-	<div class="container">
-		<div class="row justify-content-left">
-			<div class="content-header col-md-6 text-left">
-				<h1>Znáš narkolepsii?</h1>
-				<p>Celodenní únava, usínání během dne, problém zůstat vzhůru. Možná ti to zní povědomě.</p>
-				<button type="button" class="header-btn btn btn-outline-light">Otestuj se</button>
-			</div>
-			<div class="img-header col-md-6 text-left">
-				<img src="images/narcolepsy-orange.png" class="img-fluid person" alt="Responsive image">
-			</div>
-		</div>
-	</div>
-</header>
+      <div class="collapse navbar-collapse" id="mojeNavigace">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="co-je-narkolepsie.html"
+              >Co je narkolepsie</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="najdi-specialistu.html"
+              >Najdi specialistu</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link action" href="otestuj-se.html">Otestuj se</a>
+          </li>
+          <!--<li class="nav-item"><a class="nav-link" href="/">Zeptej se</a></li>-->
+        </ul>
+      </div>
+    </nav>
 
-<!-- Main -->
-<section class="section about">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="narkolepsie col-md-6 obsah text-left">
-				<h2>Co je narkolepsie</h2>
-				<p>Narkolepsie je spánková porucha, která se projevuje nadměrnou denní spavostí. Mezi další typické příznaky patří především kataplexie, spánková obrna, hypnagogické halucinace, automatické chování a nekvalitní noční spánek. Lidem s narkolepsií se chce spát často, ale do růžova se vyspí málokdy. <a class="content-link" href="#narkolepsie">Čti dál...</a>
-				</p>
-			</div>
-			<div class="col-md-6">
-				<img src="images/brain-chaos.png" class="img-fluid mozek" alt="Responsive image">
-			</div>
-		</div>
-	</div>
-</section>
+    <!-- Header -->
+    <header class="section section-header">
+      <div class="container">
+        <div class="row justify-content-left">
+          <div class="content-header col-md-6 text-left">
+            <h1>Znáš narkolepsii?</h1>
+            <p>
+              Celodenní únava, usínání během dne, problém zůstat vzhůru. Možná
+              ti to zní povědomě.
+            </p>
+            <button type="button" class="btn btn-primary">
+              <a class="nav-link" href="otestuj-se.html">Otestuj se</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<section class="section">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-4 text-left">
-				<h3>1</h3>
-				<h2>Otestuj se</h2>
-				<p>Udělej si jednoduchý test, který zjišťuje přítomnost a míru typických příznaků pro narkolepsii. Test má dvě části, které ti dohromady zaberou cca 5 minut.
-				</p>
-				<p><a class="content-link" href="#test">Přejdi na test...</a>
-				</p>
-			</div>
-			<div class="col-md-4 text-left">
-				<h3>2</h3>
-				<h2>Najdi specialistu</h2>
-				<p>Projdi mapu odborných pracovišť a zjisti, kde jsou v ČR spánkové laboratoře, které se specializují právě na narkolepsii.
-				</p>
-				<p><a class="content-link" href="#centra">Najdi spánkové centrum...</a>
-			</div>
-			<div class="col-md-4 text-left">
-				<h3>3</h3>
-				<h2>Zeptej se</h2>
-				<p>Máš otázky? Napiš přes messanger nebo se připoj k diskusní skupině narkoleptiků na facebooku.
-				</p>
-				<p><a class="content-link" href="#kontakt">Ikona Messenger</a>
-				<p><a class="content-link" href="#kontakt">Ikona Facebook</a>
-			</div>
-		</div>
-	</div>
-</section>
+    <!-- Narkolepsie -->
+    <section class="section section-uvod">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="narkolepsie col-md-6 text-left">
+            <h2>Co je narkolepsie</h2>
+            <p>
+              Narkolepsie je spánková porucha, která se projevuje nadměrnou
+              denní spavostí. Mozek nefunguje správně a
+              nedokáže zajistit a udržet normální spánek a bdělost. Touha usnout
+              odpovídá stavu, jako by člověk 48&nbsp;-&nbsp;72&nbsp;hodin vůbec
+              nespal. Mezi další typické příznaky patří především
+              kataplexie, spánková obrna, hypnagogické halucinace, automatické
+              chování a nekvalitní noční spánek. 
+            </p>
+            <p class="text-right">
+							<a class="content-link" href="co-je-narkolepsie.html"
+              >Čti dál</a
+            >
+          </li>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/usinani-kavarna.png"
+              class="img-fluid float-md-left"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- footer -->
-	<div id="footer">
-		<div class="container">
-			<div class="row">
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-left">
+            <h2>Otestuj se</h2>
+            <p>
+              Udělej si jednoduchý test, který zjišťuje přítomnost a míru
+              typických příznaků pro narkolepsii. Test má dvě části a celkem 13
+              otázek, které ti dohromady zaberou cca 5 minut. Z výsledku si
+              můžeš udělat orientační představu, jestli je tvůj spánek v
+              normálu, nebo by se mohlo jednat o spánkovou poruchu, a bylo by
+              vhodné navštívit specializovaného lékaře.
+            </p>
+            <p class="text-right">
+              <a class="content-link" href="otestuj-se.html">Přejdi na test</a>
+            </p>
+          </div>
+          <div class="col-md-6 order-md-first">
+            <img
+              src="images/automaticke-chovani-psani.png"
+              class="img-fluid float-md-right"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="footer-author col-sm-8">
-					<p>&copy;2020, Czechitas, Petra Pavlisová & Lenka Erbenová.</p>
-				</div>
-	</div><!-- END footer -->
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-left ">
+            <h2>Najdi specialistu</h2>
+            <p>
+              V České republice je celkem 6 spánkových laboratoří, které se
+              specializují právě na narkolepsii. Diagnostika probíhá spánkovým
+              monitoringem v průběhu noci i dne - noční polysomnografií a testem
+              mnohačetné latence usnutí během dne. Podívej se do mapy a zjisti,
+              jaká spánková laboratoř se nachází v tvojí lokalitě a kam se můžeš
+              v případě potřeby objednat k dalšímu vyšetřením.
+            </p>
+            <p class="text-right">
+              <a class="content-link" href="najdi-specialistu.html">Najdi spánkové centrum</a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="images/paralyza.png"
+              class="img-fluid float-md-left"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-left">
+            <h2>Zeptej se</h2>
+            <p>
+              Máš další otázky? Napiš přes <strong>messenger</strong> nebo se připoj k diskusní <strong>skupině narkoleptiků na facebooku</strong>. Existuje také spolek pacientů s
+              narkolepsií <a class="content-link" href="http://narkolepsie.cz/" target="_blank">Diagnóza narkolepsie</a> při Centru pro poruchy spánku a
+              bdění na Neurologické klinice 1. LF UK a VFN v Praze nebo projdi
+              stránky o narkolepsii <a class="content-link" href="http://usinam.cz/" target="_blank">Usínám.cz</a>. Tam všude najdeš další informace
+              i lidi, kteří mají narkolepsii a bojují s ní každý den.
+            </p>
+            <p class="icon-social">
+              <a class="content-link" href="http://m.me/usinam.cz" target="_blank"><img alt="messenger" src="images/icon-messenger.png" width="48" height="48"></a>
+              <a class="content-link" href="https://www.facebook.com/groups/usinam.cz/" target="_blank"><img alt="facebook" src="images/icon-facebook.png" width="48" height="48"></a>
+            </p>
+          </div>
+          <div class="col-md-6 text-left order-md-first">
+            <img
+              src="images/halucinace-po-probuzeni.png"
+              class="img-fluid float-md-right"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.slim.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <!-- footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="footer-author">
+            <p>
+              &copy;2020, Czechitas, Petra Pavlisová & Lenka Erbenová. Ilustrace
+              Jenni Holtz, Martin Otevřel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
