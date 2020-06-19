@@ -5,7 +5,6 @@ sm: (min-width: 576px) and (max-width: 767px)
 md: (min-width: 768px) and (max-width: 991px)
 lg: (min-width: 992px) and (max-width: 1199px)
 xl: (min-width: 1200px)
-
 Barvy
 text: #26292c
 dark-blue: #0c2357
@@ -396,6 +395,30 @@ label {
 */
 /* ----- FOOTER ----- */
 
+.btn-outline-light {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.38);
+  background-color: #f57c00;
+  border-color: #f57c00;
+  padding: 8px 34px 8px 34px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 20px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.btn-outline-light:hover {
+  color: white;
+  background-color: #ef6c00;
+  border-color: #ef6c00;
+}
+
+/* FOOTER */
 #footer {
   background-image: url(../images/dark-blue-watercolor-bar.jpg);
   background-repeat: no-repeat;
@@ -466,14 +489,23 @@ label {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+}
 
   .jumbotron p:last-child {
     margin-bottom: 0;
   }
+  .question {
+    width: 100%;
+  }
+  #submitSNS {
+    margin-top: 20px;
+  }
+
 
   .jumbotron .container {
     max-width: 40rem;
   }
+
 
   /* ----- TYPOGRAPHY ----- */
 
@@ -489,14 +521,223 @@ label {
     padding-top: 10%;
   }
 
+
   /* ----- FOOTER ----- */
 
   footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+  /*Najdi specialistu - mapa*/
+#mapa {
+  width: 65vw;
+  height: 80vh;
+  margin: 30px auto;
+}
 
-  footer p {
-    margin-bottom: 0.25rem;
+h1 {
+  margin-top: 120px;
+}
+
+.footer {
+  display: block;
+}
+
+/* Otestuj se */
+.formHeader {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #363a69;
+  border-radius: 10px;
+  padding: 20px 0;
+  background-color: #363a69;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* .situation {
+  border: 1px solid yellow;
+}
+.chanceOfDozing {
+  border: 1px solid orange;
+}
+.probability {
+  border: 1px solid brown;
+  display: flex;
+  justify-content: flex-end;
+}*/
+form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.question {
+  border: 3px solid #e4e4e4;
+  border-radius: 10px;
+  margin: 7px 3px;
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.questDescription {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e4e4e4;
+  font-weight: 500;
+  font-size: 16px;
+  height: 5rem;
+  padding: auto;
+}
+
+.questDescription p:nth-of-type(1) {
+  margin: auto 0 auto 1rem;
+}
+
+.questDescription p:nth-of-type(2) {
+  padding-left: 2rem;
+}
+
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+
+.radio-toolbar label {
+  display: block;
+  width: 20px;
+  background-color: #fff;
+  padding: 5px 19px 4px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 3px solid #06153e;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+  background-color: #06153e;
+  border-color: #06153e;
+  color: #fff;
+}
+
+.radio-toolbar label:hover {
+  background-color: #f57c00;
+}
+
+.radio-choice {
+  border: 1px solid #e4e4e4;
+  display: flex;
+  position: relative;
+  height: 3.5rem;
+}
+
+.radio-choice span {
+  padding-top: 15px;
+  position: absolute;
+  left: 50px;
+}
+
+form .submit {
+  text-transform: uppercase;
+  /* outline: 0; */
+  background: #06153e;
+  width: 150px;
+  border: 3px solid #06153e;
+  border-radius: 10px;
+  padding: 15px;
+  color: #fff;
+  font-size: 1rem;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 700;
+  display: block;
+}
+
+#submitESS {
+  margin: 20px auto 0 auto;
+}
+
+#submitSNS {
+  margin: auto;
+}
+
+form .submit:hover {
+  color: #ef6c00;
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    flex-direction: column;
+    justify-content: center;
   }
+  .question {
+    width: 100%;
+  }
+  #submitSNS {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .formSNS .question:nth-of-type(4) .questDescription p {
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .questDescription p:nth-of-type(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .radio-choice span {
+    padding: 0;
+  }
+  .formESS .question:nth-of-type(3) .questDescription p,
+  .formESS .question:nth-of-type(8) .questDescription p,
+  .formSNS .question:nth-of-type(2) .questDescription p,
+  .formSNS .question:nth-of-type(5) .questDescription p {
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .formHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+  .radio-choice span {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  .formSNS .question:nth-of-type(4) .questDescription p {
+    font-size: 14px;
+  }
+}
+
+.result {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.resultDescription {
+  font-size: 20px;
+  font-weight: 700;
+  color: #06153e;
+}
+
+.score {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #06153e;
 }
