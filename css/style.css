@@ -83,7 +83,7 @@ body {
 }
 
 .section-header {
-  height: 550px;
+  max-height: 550px;
   background-image: url(../images/dark-blue-watercolor-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,7 +92,7 @@ body {
 }
 
 .content-header {
-  padding-top: 60px;
+  padding-top: 2rem;
 }
 
 /* ----- JUMBOTRON ----- */
@@ -213,30 +213,9 @@ p a:hover {
 }
 
 .section-header .btn-primary {
-  cursor: pointer;
-  color: white;
-  background-color: #f57c00;
-  border-color: #f57c00;
-  border-radius: 2rem;
-  font-weight: 700;
-  padding: 0.2rem 1.75rem 0.2rem 1.75rem;
-  width: 210px;
-  margin-top: 0.5rem;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
-    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-primary:hover {
-  color: white;
-  background-color: #ef6c00;
-  border-color: #ef6c00;
-}
-
-.btn-outline-light:hover {
-  color: white;
-  background-color: #ef6c00;
-  border-color: #ef6c00;
+  padding: 0rem 1rem 0rem 1rem;
+  width: 150px;
+  margin-bottom: 6rem;
 }
 
 .icon-social {
