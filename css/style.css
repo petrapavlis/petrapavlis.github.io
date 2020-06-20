@@ -92,7 +92,7 @@ body {
 }
 
 .content-header {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 /* ----- JUMBOTRON ----- */
@@ -163,30 +163,6 @@ p a:hover {
 
 /* ----- BUTTON ----- */
 
-.section-header .btn-primary {
-  cursor: pointer;
-  color: white;
-  background-color: #f57c00;
-  border-color: #f57c00;
-  border-radius: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  word-spacing: 0.5rem;
-  text-transform: uppercase;
-  padding: 0.2rem 1.75rem 0.2rem 1.75rem;
-  width: 210px;
-  margin-top: 0.5rem;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
-    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-primary:hover {
-  color: white;
-  background-color: #ef6c00;
-  border-color: #ef6c00;
-}
-
 .btn-primary {
   cursor: pointer;
   color: white;
@@ -236,6 +212,33 @@ p a:hover {
   color: #f57c00;
 }
 
+.section-header .btn-primary {
+  cursor: pointer;
+  color: white;
+  background-color: #f57c00;
+  border-color: #f57c00;
+  border-radius: 2rem;
+  font-weight: 700;
+  padding: 0.2rem 1.75rem 0.2rem 1.75rem;
+  width: 210px;
+  margin-top: 0.5rem;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: #ef6c00;
+  border-color: #ef6c00;
+}
+
+.btn-outline-light:hover {
+  color: white;
+  background-color: #ef6c00;
+  border-color: #ef6c00;
+}
+
 .icon-social {
   display: flex;
   justify-content: flex-end;
@@ -246,29 +249,6 @@ p a:hover {
 }
 
 /* ----- FOOTER ----- */
-
-.btn-outline-light {
-  cursor: pointer;
-  color: white;
-  font-weight: 700;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.38);
-  background-color: #f57c00;
-  border-color: #f57c00;
-  padding: 8px 34px 8px 34px;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
-    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 20px;
-  box-shadow: 0 8px 6px -6px black;
-}
-
-.btn-outline-light:hover {
-  color: white;
-  background-color: #ef6c00;
-  border-color: #ef6c00;
-}
 
 /* FOOTER */
 #footer {
@@ -331,10 +311,6 @@ p a:hover {
     background-color: #0c2357;
   }
 
-  .content-header {
-    padding-top: 10%;
-  }
-
   /* ----- JUMBOTRON ----- */
 
   .jumbotron {
@@ -382,10 +358,6 @@ footer {
   width: 65vw;
   height: 80vh;
   margin: 30px auto;
-}
-
-h1 {
-  margin-top: 120px;
 }
 
 .footer {
