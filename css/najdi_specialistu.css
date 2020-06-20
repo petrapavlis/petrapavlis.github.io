@@ -1,0 +1,21 @@
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+Barvy
+text: #26292c
+dark-blue: #0c2357
+light-blue: #363a69
+orange: #f57c00
+orange darker: #ef6c00
+white-grey: #fafafa
+*/
+
+.places {
+  display: flex;
+  flex-wrap: wrap;
+}
