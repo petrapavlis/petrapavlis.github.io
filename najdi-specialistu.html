@@ -30,7 +30,7 @@
 
   <body>
     <!-- Main menu -->
-    <nav class="navbar navbar-expand-md navbar-light py-0">
+    <nav class="navbar navbar-fixed navbar-expand-md navbar-light py-0">
       <a class="navbar-brand" href="index.html">
         <img
           src="images/spaci_logo_light.png"
@@ -68,7 +68,6 @@
           <li class="nav-item">
             <a class="nav-link action" href="otestuj-se.html">Otestuj se</a>
           </li>
-          <!--<li class="nav-item"><a class="nav-link" href="/">Zeptej se</a></li>-->
         </ul>
       </div>
     </nav>
@@ -88,37 +87,8 @@
       </div>
     </section>
 
-    <section class="sekce">
-      <div class="container">
-        <h2>Kde mám nejbližší spánkovou laboratoř</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-left">
-            <p>
-              Pokud máš podezření na narkolepsii, které navíc potvrdil i výsledek našeho testu, navštiv lékaře a žádej vyšetření ve spánkové laboratoři. Nejbližší spánkové centrum s odborností na narkolepsii najdeš v naší mapě, nicméně tato pracoviště jsou velmi vytížená a obvykle neakceptují pacienty napřímo. S největší pravděpodobností tedy budeš muset zamířit nejdříve ke svému praktickému lékaři nebo neurologovi, aby tě na takové vyšetření doporučil. Svému lékaři sděl podezření na narkolepsii a všechny příznaky včetně výsledku našeho testu. Bude muset sepsat zprávu pro spánkovou laboratoř a čím specifičtější bude, tím větší máš šanci na brzké objednání. Je důležité, aby do zprávy konkrétně uvedl podezření na narkolepsii, protože pacienti s tímto onemocněním mají tak trochu přednost před jinými spánkovými poruchami.
-            </p>
-            <p>
-              Začni si psát spánkový deník a zaznamenávej tam všechny související údaje. Čas ulehnutí, čas vstávání, kolikrát za den usneš, jestli máš v noci noční můry, o čem se ti zdálo...cokoliv tě napadne a souvisí to se spánkem Zapisuj do něj údaje každý den. Deník pak nezapomeň přinést i na vyšetření do spánkové laboratoře minimálně za období posledních 14 dnů.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-      <!-- Sekce Map -->
-      <div class="map">
-        <div class="container">
-          <div id="mapa">
-            <script src="https://api.mapy.cz/loader.js"></script>
-            <script>
-              Loader.load();
-            </script>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Sekce Karty -->
-    <div class="album py-5 bg-light">
+    <div class="album py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -135,6 +105,19 @@
       </div>
     </div>
 
+    <!-- Sekce Najdi specialistu -->
+    <section class="section">
+      <div class="container">
+        <div id="mapa">
+          <script src="https://api.mapy.cz/loader.js"></script>
+          <script>
+            Loader.load();
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
     <!-- footer -->
     <div id="footer">
       <div class="container">
@@ -143,6 +126,10 @@
             <p>
               &copy;2020, Czechitas, Petra Pavlisová & Lenka Erbenová. Ilustrace
               Jenni Holtz, Martin Otevřel.
+            </p>
+            <p class="icon-social justify-content-center">
+              <a class="content-link" href="http://m.me/usinam.cz" target="_blank"><img alt="messenger" src="images/icon-messenger-footer.png" width="24" height="24"></a>
+              <a class="content-link" href="https://www.facebook.com/groups/usinam.cz/" target="_blank"><img alt="facebook" src="images/icon-facebook-footer.png" width="24" height="24"></a>
             </p>
           </div>
         </div>

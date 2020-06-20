@@ -29,3 +29,19 @@ Všechno je v hlavě. Musíš změnit myšlení.
 Jak můžeš něčeho dosáhnout, když jsi takový lenoch a pořád spíš?
 Vstávej a makej. Šunky si válet nebudeš.
 Pořád zapomínáš.
+
+<section class="section">
+      <div class="container">
+        <h2>Kde mám nejbližší spánkovou laboratoř</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-left">
+            <p>
+              Pokud máš podezření na narkolepsii, které navíc potvrdil i výsledek našeho testu, navštiv lékaře a žádej vyšetření ve spánkové laboratoři. Nejbližší spánkové centrum s odborností na narkolepsii najdeš v naší mapě, nicméně tato pracoviště jsou velmi vytížená a obvykle neakceptují pacienty napřímo. S největší pravděpodobností tedy budeš muset zamířit nejdříve ke svému praktickému lékaři nebo neurologovi, aby tě na takové vyšetření doporučil. Svému lékaři sděl podezření na narkolepsii a všechny příznaky včetně výsledku našeho testu. Bude muset sepsat zprávu pro spánkovou laboratoř a čím specifičtější bude, tím větší máš šanci na brzké objednání. Je důležité, aby do zprávy konkrétně uvedl podezření na narkolepsii, protože pacienti s tímto onemocněním mají tak trochu přednost před jinými spánkovými poruchami.
+            </p>
+            <p>
+              Začni si psát spánkový deník a zaznamenávej tam všechny související údaje. Čas ulehnutí, čas vstávání, kolikrát za den usneš, jestli máš v noci noční můry, o čem se ti zdálo...cokoliv tě napadne a souvisí to se spánkem Zapisuj do něj údaje každý den. Deník pak nezapomeň přinést i na vyšetření do spánkové laboratoře minimálně za období posledních 14 dnů.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
