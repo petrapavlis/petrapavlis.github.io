@@ -7,7 +7,7 @@ const places = {
       name: "Centrum pro poruchy spánku a bdění Neurologická klinika 1. LF UK a VFN",
       address: "Kateřinská 468/30, 128 21 Praha 2",
       phoneNumber: "+420 224 965 550",
-      email: "neuro@lf1.cuni.cz",
+      email: "spanek@vfn.cz",
       web: "https://neurologie.lf1.cuni.cz/1LFNK-182.html",
     },
     {
