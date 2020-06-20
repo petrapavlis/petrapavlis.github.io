@@ -4,7 +4,18 @@ const formESS = document.getElementById("formESS");
 formESS.addEventListener('submit', (e) => {
   e.preventDefault();
   e.stopPropagation();
-  const formFields = e.target.elements;
+  const form = e.target
+  form.classList.add("was-validated");
+  const formFields = form.elements;
+  if (!form.checkValidity()) {
+    const invalidInputs = document.querySelectorAll("input[type=radio]:invalid");
+    invalidInputs.forEach((input) => {
+      input.parentElement.parentElement.parentElement.classList.add("is-invalid");
+    });
+    window.location.hash = "";
+    window.location.hash = invalidInputs[0].name;
+    return
+  }
   let essResult = 0;
   for (let i = 1; i <= 8; i += 1) {
     const question = "ess-quest" + i;
