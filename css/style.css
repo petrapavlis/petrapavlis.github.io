@@ -18,6 +18,7 @@ white-grey: #fafafa
 html {
   box-sizing: border-box;
   background-color: #fafafa;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -300,12 +301,6 @@ p a:hover {
 
 .jumbotron p:last-child {
   margin-bottom: 0;
-}
-.question {
-  width: 100%;
-}
-#submitSNS {
-  margin-top: 20px;
 }
 
 .jumbotron .container {
