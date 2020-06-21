@@ -17,16 +17,16 @@ white-grey: #fafafa
 
 /* Otestuj se */
 .formHeader {
-  border: 1px solid #0c2357;
+  /* border: 1px solid #0c2357; */
   border-radius: 5px;
   padding: 30px 5px;
-  background-color: #0c2357;
-  color: #fff;
+  color: #0c2357;
   font-size: 18px;
   font-weight: 400;
   width: 70%;
-  margin: 0 auto 5px auto;
+  margin: 0 auto 20px auto;
   text-align: center;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
 form {
