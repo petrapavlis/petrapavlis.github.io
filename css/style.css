@@ -88,7 +88,7 @@ body {
 
 .section-header {
   height: 550px;
-  background-image: url(../images/dark-blue-watercolor-header.jpg);
+  background-image: url(../images/dark-blue-watercolor-header.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
@@ -118,11 +118,10 @@ body {
   padding-top: 7rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
-  background-image: url(../images/dark-blue-watercolor-jumbotron.jpg);
+  background-image: url(../images/dark-blue-watercolor-universal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
-  background-color: #0c2357;
   color: white;
 }
 
@@ -275,14 +274,25 @@ p a:hover {
 
 /* FOOTER */
 #footer {
-  background-image: url(../images/dark-blue-watercolor-footer.jpg);
+  background-image: url(../images/dark-blue-watercolor-footer.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
-  background-color: #0c2357;
   color: white;
   padding-top: 1rem;
   margin-top: 2.75rem;
+  font-size: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px #0c2357;
+  height: 280px;
+}
+
+#footer-uni {
+  background-image: url(../images/dark-blue-watercolor-universal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  color: white;
   font-size: 1rem;
   text-align: center;
   text-shadow: 1px 1px 2px #0c2357;
@@ -329,12 +339,11 @@ p a:hover {
   .section-header {
     height: 650px;
     background-image: url(../images/falling-asleep-no-background.png),
-      url(../images/dark-blue-watercolor-header.jpg);
+      url(../images/dark-blue-watercolor-header.png);
     background-repeat: no-repeat, no-repeat;
     background-position: top 40% right 8%, bottom right;
     background-size: 50%, cover;
     background-repeat: no-repeat;
-    background-color: #0c2357;
   }
 
   .content-header {
@@ -378,7 +387,6 @@ footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
 
 .footer {
   display: block;
