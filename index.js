@@ -87,15 +87,15 @@ const placeList = document.querySelector('.places');
 
 const renderPlace = (name, address, phone, email, web) => {
   const placeElm = document.createElement("div")
-  placeElm.className = "spec-place"
+  placeElm.className = "col-sm-12 col-md-6 col-lg-4"
   placeElm.innerHTML = `
-   <div class="card">
-     <div class="place__name">${name}</div>
-     <div class="place__address">${address}</div>
-     <div class="place__phone">Tel: ${phone}</div>
-     <div class="place__email">E-mail: ${email}</div>
-     <div class="place__web"><a href="${web}" target="_blank">Přejdi na web</a></div>
-   </div>`
+    <div class="card">
+      <div class="place__name">${name}</div>
+      <div class="place__address">${address}</div>
+      <div class="place__phone">Tel: ${phone}</div>
+      <div class="place__email">E-mail: ${email}</div>
+      <div class="place__web"><a href="${web}" target="_blank">Přejdi na web</a></div>
+    </div>`
   return placeElm
 }
 

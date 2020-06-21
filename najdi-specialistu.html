@@ -88,65 +88,62 @@
       </div>
     </section>
 
-    <!-- Sekce Karty -->
-    <div class="album py-5">
-      <div class="container spec-places">
-        <div class="places">
-        </div>
-      </div>
-    </div>
-
-    <!-- Sekce Najdi specialistu -->
-    <section class="section">
+    <section class="sekce">
       <div class="container">
-        <div id="mapa">
-          <script src="https://api.mapy.cz/loader.js"></script>
-          <script>
-            Loader.load();
-          </script>
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-left">
+            <div class="places"></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div id="mapa">
+        <script src="https://api.mapy.cz/loader.js"></script>
+        <script>
+          Loader.load();
+        </script>
+      </div>
+    </section>
 
-  <!-- Sekce Footer -->
-  <div id="footer">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="footer-author text-center">
-          <p>
-            &copy;2020, Czechitas. Vytvořily: Petra Pavlisová & Lenka Erbenová. Ilustrace:
-            Jenni Holtz, Martin Otevřel.
-          </p>
-          <p class="icon-social">
-            <a
-              class="content-link"
-              href="http://m.me/usinam.cz"
-              target="_blank"
-              ><img
-                alt="messenger"
-                src="images/icon-messenger-white.png"
-                width="40"
-                height="40"
-            /></a>
-            <a
-              class="content-link"
-              href="https://www.facebook.com/groups/usinam.cz/"
-              target="_blank"
-              ><img
-                alt="facebook"
-                src="images/icon-facebook-white.png"
-                width="40"
-                height="40"
-            /></a>
-          </p>
+    <!-- Sekce Footer -->
+    <div id="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="footer-author text-center">
+            <p>
+              &copy;2020, Czechitas. Vytvořily: Petra Pavlisová & Lenka
+              Erbenová. Ilustrace: Jenni Holtz, Martin Otevřel.
+            </p>
+            <p class="icon-social">
+              <a
+                class="content-link"
+                href="http://m.me/usinam.cz"
+                target="_blank"
+                ><img
+                  alt="messenger"
+                  src="images/icon-messenger-white.png"
+                  width="40"
+                  height="40"
+              /></a>
+              <a
+                class="content-link"
+                href="https://www.facebook.com/groups/usinam.cz/"
+                target="_blank"
+                ><img
+                  alt="facebook"
+                  src="images/icon-facebook-white.png"
+                  width="40"
+                  height="40"
+              /></a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
     <!-- JavaScript -->
-    <script src="index.js"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
