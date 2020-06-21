@@ -36,7 +36,7 @@ const places = {
       phoneNumber: "+420 597 373 097",
       email: "fno@fno.cz",
       web: "https://www.fno.cz/neurologicka-klinika",
-      logo: "loga/fn_ost.png",
+      logo: "loga/fn_ost.gif",
     },
     {
       coords: [14.4694153, 48.9607058],
