@@ -74,7 +74,7 @@ for (let i = 0; i < places.specPlaces.length; i += 1) {
   layer.addMarker(marker);
   let card = new SMap.Card();
   card.getHeader().innerHTML += `<strong>${places.specPlaces[i].name}</strong>`;
-  card.getBody().innerHTML += `Adresa: ${places.specPlaces[i].address}<br> Telefon: ${places.specPlaces[i].phoneNumber}<br> E-mail: ${places.specPlaces[i].email}<br> <a href="${places.specPlaces[i].web}" target="_blank">Přejdi na web</a>`;
+  card.getBody().innerHTML += `${places.specPlaces[i].address}<br> Tel: ${places.specPlaces[i].phoneNumber}<br> E-mail: ${places.specPlaces[i].email}<br> <a href="${places.specPlaces[i].web}" target="_blank">Přejdi na web</a>`;
   marker.decorate(SMap.Marker.Feature.Card, card);
 }
 
@@ -91,10 +91,10 @@ const renderPlace = (name, address, phone, email, web) => {
   placeElm.innerHTML = `
    <div class="card">
      <div class="place__name">${name}</div>
-     <div class="place__address">Adresa: ${address}</div>
-     <div class="episode__phone">Tel: ${phone}</div>
-     <div class="episode__email">E-mail: ${email}</div>
-     <div class="episode__web"><a href="${web}" target="_blank">Přejdi na web</a></div>
+     <div class="place__address">${address}</div>
+     <div class="place__phone">Tel: ${phone}</div>
+     <div class="place__email">E-mail: ${email}</div>
+     <div class="place__web"><a href="${web}" target="_blank">Přejdi na web</a></div>
    </div>`
   return placeElm
 }
