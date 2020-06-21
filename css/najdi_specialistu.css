@@ -29,13 +29,17 @@ white-grey: #fafafa
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  height: 250px;
+  height: 300px;
   box-sizing: border-box;
   margin: 15px 0;
 }
 
 .place__name {
   font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.place__logo {
   margin-bottom: 1rem;
 }
 

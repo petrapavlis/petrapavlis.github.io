@@ -9,6 +9,7 @@ const places = {
       phoneNumber: "+420 224 965 550",
       email: "spanek@vfn.cz",
       web: "https://neurologie.lf1.cuni.cz/1LFNK-182.html",
+      logo: "loga/1LFNK.jpg",
     },
     {
       coords: [14.4200572, 50.1791797],
@@ -17,6 +18,7 @@ const places = {
       phoneNumber: "+420 283 088 400, +420 283 088 261",
       email: "spanek@nudz.cz",
       web: "https://www.nudz.cz/lecebna-pece/spankova-medicina/profil/",
+      logo: "loga/nudz.png",
     },
     {
       coords: [16.5765797, 49.1743833],
@@ -25,6 +27,7 @@ const places = {
       phoneNumber: "+420 532 232 503",
       email: "fnbrno@fnbrno.cz",
       web: "https://www.fnbrno.cz/neurologicka-klinika/k1471",
+      logo: "loga/fn_brno.jpeg",
     },
     {
       coords: [18.1610731, 49.8268006],
@@ -33,6 +36,7 @@ const places = {
       phoneNumber: "+420 597 373 097",
       email: "fno@fno.cz",
       web: "https://www.fno.cz/neurologicka-klinika",
+      logo: "loga/fn_ost.png",
     },
     {
       coords: [14.4694153, 48.9607058],
@@ -41,6 +45,7 @@ const places = {
       phoneNumber: "+420 387 878 201",
       email: "nervove@nemcb.cz",
       web: "http://www.nemcb.cz/oddeleni/centrum-pro-poruchy-spanku/",
+      logo: "loga/nem_cb.png",
     },
     {
       coords: [15.8269367, 50.2003986],
@@ -49,6 +54,7 @@ const places = {
       phoneNumber: "+420 495 835 260",
       email: "vratislav.sedlak@fnhk.cz",
       web: "https://www.fnhk.cz/cpsb/statut",
+      logo: "loga/fn_hk.png",
     },
   ]
 }
@@ -85,11 +91,12 @@ map.setCenterZoom(cz[0], cz[1]);
 //cards
 const placeList = document.querySelector('.places');
 
-const renderPlace = (name, address, phone, email, web) => {
+const renderPlace = (logo, name, address, phone, email, web) => {
   const placeElm = document.createElement("div")
   placeElm.className = "col-sm-12 col-md-6 col-lg-4"
   placeElm.innerHTML = `
     <div class="card">
+      <div class="place__logo"><img src="${logo}" alt="logo nemocnice" height="64"/></div>
       <div class="place__name">${name}</div>
       <div class="place__address">${address}</div>
       <div class="place__phone">Tel: ${phone}</div>
@@ -100,7 +107,7 @@ const renderPlace = (name, address, phone, email, web) => {
 }
 
 for (let i = 0; i < places.specPlaces.length; i += 1) {
-  const placeElm = renderPlace(places.specPlaces[i].name, places.specPlaces[i].address, places.specPlaces[i].phoneNumber, places.specPlaces[i].email, places.specPlaces[i].web);
+  const placeElm = renderPlace(places.specPlaces[i].logo, places.specPlaces[i].name, places.specPlaces[i].address, places.specPlaces[i].phoneNumber, places.specPlaces[i].email, places.specPlaces[i].web);
   placeList.appendChild(placeElm);
 }
 
