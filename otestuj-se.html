@@ -11,6 +11,21 @@
     <meta name="author" content="Petra Pavlisová, Lenka Erbenová" />
     <title>Usínám - Otestuj se</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-170137882-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-170137882-1");
+    </script>
+
     <!-- Google Font: Montserrat -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -1019,29 +1034,47 @@
         <div class="row justify-content-center">
           <div class="col-md-6 text-left">
             <h3>Vaše skóre ESS: <span id="ess-score"></span></h3>
+            <p><strong>Skóre 0-10</strong> je normální stav.</p>
             <p>
-              Skóre 0-10 je normální stav.
+              <strong>Skóre 11-16</strong> naznačuje nadměrnou spavost během dne
+              - pokud cítíš, že ti spavost způsobuje potíže, vyhledej odborníka
+              na spánkovou medicínu.
             </p>
             <p>
-              Skóre 11-16 naznačuje nadměrnou spavost během dne - pokud cítíš,
-              že ti spavost způsobuje potíže, vyhledej odborníka na spánkovou
-              medicínu.
-            </p>
-            <p>
-              Skóre 16 a více udává vysokou míru nadměrné denní spavosti - svůj
-              výsledek určitě konzultuj se spánkovým specialistou a nech se
-              vyšetřit ve spánkové laboratoři.
+              <strong>Skóre 16 a více</strong> udává vysokou míru nadměrné denní
+              spavosti - svůj výsledek určitě konzultuj se spánkovým
+              specialistou a nech se vyšetřit ve spánkové laboratoři. V tomto
+              případě vystavujete sebe i své okolí nebezpečí, když řídíte auto
+              nebo pracujete s nebezpečnými stroji. Bylo by dobré svůj výsledek
+              konzultovat s odborníkem. V případě, že z testu získáte 8 nebo 9
+              bodů je váš výsledek hraniční a rovněž by jste ho měli konzultovat
+              se svým lékařem.
             </p>
           </div>
           <div class="col-md-6 text-left">
             <h3>Vaše skóre SNS: <span id="sns-score"></span></h3>
             <p>
-              Skóre 0 a vyšší je normální stav.
+              <strong>Skóre 0 a vyšší</strong> (kladné číslo) je normální stav.
             </p>
             <p>
-              Skóre méně než nula (záporné číslo) udává narkolepsii s kataplexií
-              - svůj výsledek určitě konzultuj se spánkovým specialistou a nech
-              se vyšetřit ve spánkové laboratoři.
+              <strong>Skóre méně než nula</strong> (záporné číslo) udává
+              narkolepsii s kataplexií - svůj výsledek určitě konzultuj se
+              spánkovým specialistou a nech se vyšetřit ve spánkové laboratoři.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-left">
+            <h2>Jak test funguje?</h2>
+            <p>
+              Test kombinuje dvě metody. První metoda zjišťuje nadměrnou denní
+              spavost podle Epworthské škály spavosti (ESS - Epworth Sleep
+              Scale). Používá ji i většina pracovišť, které se zabývají
+              poruchami spánku, v každodenní klinické praxi. Druhá metoda,
+              Švýcarská škála narkolepsie (SNS - Swiss Narcolepsy Scale), se
+              zabývá specifickými symptomy narkolepsie s kataplexií, protože
+              nadměrná denní spavost sama o sobě může být projevem i jiných
+              spánkových poruch.
             </p>
           </div>
         </div>
