@@ -29,10 +29,17 @@ form.addEventListener('submit', (e) => {
 
   let snsResult = (6 * questionValues[0]) + (9 * questionValues[1]) - (5 * questionValues[2]) - (11 * questionValues[3]) - (13 * questionValues[4]) + 20;
   console.log(snsResult)
+
   const snsScore = document.getElementById("sns-score");
   snsScore.textContent = snsResult;
   const essScore = document.getElementById("ess-score");
   essScore.textContent = essResult
+
+  if (form.checkValidity()) {
+    window.location.hash = "";
+    window.location.hash = "metody";
+    return
+  }
 })
 
 const radio = document.querySelectorAll("input[type=radio]");
