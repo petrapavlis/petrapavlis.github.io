@@ -35,6 +35,10 @@ form {
   margin-bottom: 2rem;
 }
 
+.formESS-SNS .container {
+  padding: 0;
+}
+
 .question {
   background: #e4e4e4;
   border-radius: 5px;
@@ -72,6 +76,7 @@ form {
 .radio-toolbar input[type="radio"] {
   position: absolute;
   width: 0;
+  opacity: 0;
 }
 
 .radio-toolbar label {
@@ -146,16 +151,23 @@ form {
   margin: 30px auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
   .question,
   .formHeader {
     width: 100%;
+  }
+  .question {
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 485px) {
   .formSNS .question:nth-of-type(4) .questDescription p {
     line-height: 16px;
+  }
+
+  .radio-choice {
+    height: 4rem;
   }
   .radio-choice .icon span {
     width: 35px;
