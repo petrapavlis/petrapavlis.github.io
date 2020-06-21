@@ -87,7 +87,7 @@ body {
 }
 
 .section-header {
-  max-height: 550px;
+  height: 550px;
   background-image: url(../images/dark-blue-watercolor-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,7 +115,7 @@ body {
 }
 
 .jumbotron {
-  padding-top: 3rem;
+  padding-top: 7rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
   background-image: url(../images/dark-blue-watercolor-jumbotron.jpg);
@@ -327,11 +327,11 @@ p a:hover {
   /* ----- HEADER ----- */
 
   .section-header {
-    height: 800px;
+    height: 650px;
     background-image: url(../images/falling-asleep-no-background.png),
       url(../images/dark-blue-watercolor-header.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: top 50% right 8%, bottom right;
+    background-position: top 40% right 8%, bottom right;
     background-size: 50%, cover;
     background-repeat: no-repeat;
     background-color: #0c2357;
@@ -339,13 +339,14 @@ p a:hover {
 
   .content-header {
     margin-left: 2rem;
+    margin-top: 3rem;
   }
 
   /* ----- JUMBOTRON ----- */
 
   .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 8rem;
+    padding-bottom: 4.5rem;
   }
 }
 
@@ -394,8 +395,12 @@ footer {
 
 /* ----- MEDIA - LARGE SCREEN ----- */
 @media (min-width: 992px) {
+  .section-header {
+    height: 750px;
+  }
+
   .content-header {
-    padding-top: 6rem;
+    padding-top: 8rem;
     margin-left: 2rem;
   }
 
