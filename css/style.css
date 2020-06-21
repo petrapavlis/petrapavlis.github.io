@@ -270,6 +270,10 @@ p a:hover {
   border-color: #4460a0;
 }
 
+.icon-social {
+  margin-bottom: 0;
+}
+
 .icon-social img {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -279,12 +283,12 @@ p a:hover {
 
 /* FOOTER */
 #footer {
+  position: relative;
   background-image: url(../images/dark-blue-watercolor-footer.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
   color: white;
-  padding-top: 1rem;
   margin-top: 2.75rem;
   font-size: 1rem;
   text-align: center;
@@ -292,22 +296,10 @@ p a:hover {
   height: 280px;
 }
 
-#footer-uni {
-  background-image: url(../images/dark-blue-watercolor-universal.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top left;
-  color: white;
-  font-size: 1rem;
-  text-align: center;
-  text-shadow: 1px 1px 2px #0c2357;
-  height: 280px;
-}
-
 .footer-author {
-  padding-top: 5rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  position: absolute;
+  bottom: 3rem;
+  padding: 0 0.5rem;
 }
 
 /* ----- MEDIA - TABLET ----- */
@@ -362,43 +354,28 @@ p a:hover {
     padding-top: 8rem;
     padding-bottom: 4.5rem;
   }
-}
 
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
 
-.jumbotron .container {
-  max-width: 40rem;
-}
+  .jumbotron .container {
+    max-width: 40rem;
+  }
 
-/* ----- TYPOGRAPHY ----- */
+  /* ----- TYPOGRAPHY ----- */
 
-h1 {
-  font-size: 3rem;
-}
+  h1 {
+    font-size: 3rem;
+  }
 
-.section-header p {
-  font-size: 1.5rem;
-}
+  .section-header p {
+    font-size: 1.5rem;
+  }
 
-.content-title {
-  padding-top: 10%;
-}
-
-/* ----- FOOTER ----- */
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.footer {
-  display: block;
-}
-
-.footer-author {
-  padding-top: 7rem;
+  .content-title {
+    padding-top: 10%;
+  }
 }
 
 /* ----- MEDIA - LARGE SCREEN ----- */
@@ -410,9 +387,5 @@ footer {
   .content-header {
     padding-top: 8rem;
     margin-left: 2rem;
-  }
-
-  .footer-author {
-    padding-top: 9rem;
   }
 }

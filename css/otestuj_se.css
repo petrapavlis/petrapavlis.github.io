@@ -32,7 +32,7 @@ white-grey: #fafafa
 form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .formESS-SNS .container {
@@ -149,7 +149,7 @@ form {
   font-weight: bold;
 }
 
-.btn-primary {
+#submit {
   padding: 10px 0;
   display: block;
   margin: 30px auto;
