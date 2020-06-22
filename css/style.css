@@ -68,16 +68,17 @@ body {
 /* ----- HEADER ----- */
 
 .section-header {
-  height: 98vh;
   background-image: url(../images/dark-blue-watercolor-header.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
   color: white;
+  margin-bottom: 2rem;
 }
 
 .content-header {
-  padding: 9rem 0 1rem 0;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
   max-width: 25rem;
 }
 
@@ -348,7 +349,8 @@ button:not(.navbar-toggler, .btn-social) {
   }
 
   .content-header {
-    padding: 9rem 2rem 0 2rem;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
   }
 
   /* ----- JUMBOTRON ----- */
@@ -380,10 +382,11 @@ button:not(.navbar-toggler, .btn-social) {
 
 @media (min-width: 992px) {
   .section-header {
-    margin-bottom: 2rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .content-header {
-    padding-top: 9rem;
+    max-width: 30rem;
   }
 }
