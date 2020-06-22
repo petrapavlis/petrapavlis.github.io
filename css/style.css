@@ -9,10 +9,10 @@ xl: (min-width: 1200px)
 Barvy
 text: #26292c
 dark-blue: #0c2357
-light-blue: #363a69
 orange: #f57c00
-orange darker: #ef6c00
+orange:hover: #e47300
 white-grey: #fafafa
+box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 */
 
 html {
@@ -59,35 +59,16 @@ body {
 .navbar-light .navbar-nav .nav-link {
   color: #0c2357;
   font-weight: 500;
-  cursor: pointer;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #f57c00;
+  color: #e47300;
 }
 
 /* ----- HEADER ----- */
 
-.section-header h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.25rem;
-  font-weight: 700;
-  line-height: 1.2em;
-  margin-bottom: 1.25rem;
-  text-shadow: 1px 1px 2px #0c2357;
-}
-
-.section-header p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.5em;
-  margin-bottom: 1.25rem;
-  text-shadow: 1px 1px 2px #0c2357;
-}
-
 .section-header {
-  height: 550px;
+  height: 98vh;
   background-image: url(../images/dark-blue-watercolor-header.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,10 +77,44 @@ body {
 }
 
 .content-header {
-  padding-top: 4rem;
+  padding: 9rem 0 1rem 0;
+  max-width: 25rem;
+}
+
+.section-header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 1.25rem;
+  text-shadow: 1px 1px 2px rgba(32, 33, 36, 0.28);
+}
+
+.section-header p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 1.25rem;
+  text-shadow: 1px 1px 2px rgba(32, 33, 36, 0.28);
 }
 
 /* ----- JUMBOTRON ----- */
+
+.jumbotron {
+  background-image: url(../images/dark-blue-watercolor-universal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  color: white;
+  border-radius: 0;
+  text-shadow: 1px 1px 2px rgba(32, 33, 36, 0.28);
+}
+
+.content-jumbotron {
+  padding-top: 6rem;
+  text-shadow: 1px 1px 2px rgba(32, 33, 36, 0.28);
+}
 
 .jumbotron h1 {
   font-family: "Montserrat", sans-serif;
@@ -109,31 +124,20 @@ body {
   margin-bottom: 2rem;
 }
 
-.jumbotron p {
-  font-weight: 400;
-  line-height: 1.5em;
-}
-
-.jumbotron {
-  padding-top: 7rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background-image: url(../images/dark-blue-watercolor-universal.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom right;
-  color: white;
-  border-radius: 0;
-}
-
 .jumbotron .lead {
   color: white;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
 /* ----- SECTION ----- */
 
 .section {
-  padding: 2.75rem 1rem 1rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+}
+
+.section-menu {
+  padding: 1rem;
 }
 
 /* ----- TYPOGRAPHY ----- */
@@ -157,7 +161,7 @@ p a {
 }
 
 p a:hover {
-  color: #ef6c00;
+  color: #e47300;
 }
 
 .form p {
@@ -165,27 +169,33 @@ p a:hover {
   margin-bottom: 0rem;
 }
 
-/* ----- BUTTON ----- */
+/* ----- BUTTONS and LINKS ----- */
+
+a {
+  cursor: pointer;
+}
+
+button:not(.navbar-toggler, .btn-social) {
+  width: 210px;
+  margin: 0.5rem 0.2rem;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .btn-primary {
-  cursor: pointer;
   color: white;
   background-color: #f57c00;
   border-color: #f57c00;
   border-radius: 2rem;
   font-weight: 500;
   padding: 0rem 1.75rem 0rem 1.75rem;
-  width: 210px;
-  margin-top: 0.5rem;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
-    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-primary:hover {
   color: white;
-  background-color: #ef6c00;
-  border-color: #ef6c00;
+  background-color: #e47300;
+  border-color: #e47300;
 }
 
 .btn-primary:focus {
@@ -193,23 +203,17 @@ p a:hover {
 }
 
 .btn-outline-secondary {
-  cursor: pointer;
   color: #f57c00;
   border-color: #f57c00;
   border-radius: 2rem;
   font-weight: 500;
   padding: 0rem 1.75rem 0rem 1.75rem;
-  width: 210px;
-  margin-top: 0.5rem;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
-    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-outline-secondary:hover {
-  color: #f57c00;
+  color: #e47300;
   background-color: #fafafa;
-  border-color: #ef6c00;
+  border-color: #e47300;
 }
 
 .btn-primary a {
@@ -221,33 +225,37 @@ p a:hover {
 }
 
 .section-header .btn-primary {
-  padding: 0rem 1.2rem 0rem 1.2rem;
+  padding: 0rem 1rem;
   width: 180px;
-  margin-bottom: 6rem;
   font-size: 1.25rem;
   font-weight: 700;
+  border-radius: 2rem;
 }
 
 .btn-otestuj-se {
-  padding: 0rem 1.2rem 0rem 1.2rem;
+  padding: 0rem 1rem;
   width: 150px;
   margin-bottom: 1.5rem;
+  font-weight: 500;
+  border-radius: 2rem;
 }
 
 .btn-social {
-  cursor: pointer;
+  display: block;
   color: white;
   border-radius: 0.5rem;
   font-weight: 500;
   width: 240px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
   margin-top: 0.5rem;
 }
 
-.messenger,
-.facebook {
-  margin-right: 20px;
+.btn-social img {
+  margin: 0 0.5rem;
+}
+
+.btn-social a {
+  padding-left: 1rem;
 }
 
 .btn-messenger {
@@ -256,32 +264,27 @@ p a:hover {
 }
 
 .btn-messenger:hover {
-  background-color: #007fff;
-  border-color: #007fff;
+  background-color: #07e;
+  border-color: #07e;
 }
 
 .btn-facebook {
   background-color: #4460a0;
   border-color: #4460a0;
+  margin-bottom: 1.5rem;
 }
 
 .btn-facebook:hover {
-  background-color: #4460a0;
-  border-color: #4460a0;
-}
-
-.icon-social {
-  margin-bottom: 0;
+  background-color: #3f5994;
+  border-color: #3f5994;
 }
 
 .icon-social img {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 0.5rem;
 }
 
 /* ----- FOOTER ----- */
 
-/* FOOTER */
 #footer {
   position: relative;
   background-image: url(../images/dark-blue-watercolor-footer.png);
@@ -292,19 +295,21 @@ p a:hover {
   margin-top: 2.75rem;
   font-size: 1rem;
   text-align: center;
-  text-shadow: 1px 1px 2px #0c2357;
+  text-shadow: 1px 1px 2px rgba(32, 33, 36, 0.28);
   height: 280px;
 }
 
 .footer-author {
   position: absolute;
-  bottom: 3rem;
+  bottom: 1rem;
   padding: 0 0.5rem;
 }
 
-/* ----- MEDIA - TABLET ----- */
+/* ----- MEDIA - MD ----- */
+
 @media (min-width: 768px) {
   /* ----- MAIN MENU ----- */
+
   .navbar-light .navbar-brand {
     padding-left: 3rem;
   }
@@ -323,8 +328,8 @@ p a:hover {
 
   .navbar-light .navbar-nav .action:hover {
     color: white;
-    background-color: #ef6c00;
-    border-color: #ef6c00;
+    background-color: #e47300;
+    border-color: #e47300;
   }
 
   .navbar-light .navbar-nav .nav-link {
@@ -334,29 +339,22 @@ p a:hover {
   /* ----- HEADER ----- */
 
   .section-header {
-    height: 650px;
     background-image: url(../images/falling-asleep-no-background.png),
       url(../images/dark-blue-watercolor-header.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: top 40% right 8%, bottom right;
+    background-position: center right 8%, bottom right;
     background-size: 50%, cover;
     background-repeat: no-repeat;
   }
 
   .content-header {
-    margin-left: 2rem;
-    margin-top: 3rem;
+    padding: 9rem 2rem 0 2rem;
   }
 
   /* ----- JUMBOTRON ----- */
 
-  .jumbotron {
-    padding-top: 8rem;
-    padding-bottom: 4.5rem;
-  }
-
-  .jumbotron p:last-child {
-    margin-bottom: 0;
+  .content-jumbotron {
+    padding-top: 5.5rem;
   }
 
   .jumbotron .container {
@@ -378,14 +376,14 @@ p a:hover {
   }
 }
 
-/* ----- MEDIA - LARGE SCREEN ----- */
+/* ----- MEDIA - LG ----- */
+
 @media (min-width: 992px) {
   .section-header {
-    height: 750px;
+    margin-bottom: 2rem;
   }
 
   .content-header {
-    padding-top: 8rem;
-    margin-left: 2rem;
+    padding-top: 9rem;
   }
 }

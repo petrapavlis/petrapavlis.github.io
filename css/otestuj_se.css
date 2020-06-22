@@ -9,24 +9,21 @@ xl: (min-width: 1200px)
 Barvy
 text: #26292c
 dark-blue: #0c2357
-light-blue: #363a69
 orange: #f57c00
-orange darker: #ef6c00
+orange:hover: #e47300
 white-grey: #fafafa
+box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 */
 
 /* Otestuj se */
-.formHeader {
-  /* border: 1px solid #0c2357; */
-  border-radius: 5px;
-  padding: 30px 5px;
-  color: #0c2357;
-  font-size: 18px;
-  font-weight: 400;
-  width: 70%;
-  margin: 0 auto 20px auto;
+.formHeader1 h2 {
+  margin: 0 0 1.5rem 0;
   text-align: center;
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.formHeader2 h2 {
+  margin: 1.5rem 0;
+  text-align: center;
 }
 
 form {
@@ -44,17 +41,15 @@ form {
   margin: 0 auto 20px auto;
   display: flex;
   flex-direction: column;
-  width: 70%;
-  box-shadow: 0 0 2px #ccc;
-  border: 1px solid #e4e4e4;
+  width: 50%;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
 .questDescription {
   background-color: #fafafa;
   font-weight: 700;
-  font-size: 16px;
   min-height: 3rem;
-  padding: auto 10px;
+  padding: 10px;
   display: flex;
   align-items: center;
   border-top-left-radius: 5px;
@@ -151,6 +146,7 @@ form {
 
 #submit {
   padding: 10px 0;
+  width: 210px;
   display: block;
   margin: 30px auto;
 }
@@ -163,9 +159,6 @@ form {
   .question,
   .formHeader {
     width: 100%;
-  }
-  .question {
-    margin: 0 0 10px 0;
   }
 }
 
@@ -190,9 +183,6 @@ form {
   .questDescription p {
     line-height: 18px;
   }
-  .question {
-    line-height: 16px;
-  }
 }
 
 .result {
@@ -216,5 +206,9 @@ form {
 
 .is-invalid {
   border: 1px solid red;
-  box-shadow: 0 0 2px #fcc;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+#metody img {
+  padding-bottom: 2rem;
 }
