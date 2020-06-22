@@ -38,7 +38,7 @@ form {
 
 .question {
   border-radius: 5px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 30px auto;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -46,7 +46,7 @@ form {
 }
 
 .questDescription {
-  background-color: #fafafa;
+  background-color: #0c225718;
   font-weight: 700;
   min-height: 3rem;
   padding: 10px;

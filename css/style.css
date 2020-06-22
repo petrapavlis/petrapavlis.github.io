@@ -113,7 +113,7 @@ body {
 }
 
 .content-jumbotron {
-  padding-top: 6rem;
+  padding-top: 5rem;
   text-shadow: 1px 1px 2px rgba(32, 33, 36, 0.28);
 }
 
@@ -354,9 +354,9 @@ button:not(.navbar-toggler, .btn-social) {
 
   /* ----- JUMBOTRON ----- */
 
-  .content-jumbotron {
-    padding-top: 5.5rem;
-  }
+  /* .content-jumbotron {
+    padding-top: 4rem;
+  } */
 
   .jumbotron .container {
     max-width: 40rem;
